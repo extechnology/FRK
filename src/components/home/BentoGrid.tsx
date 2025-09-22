@@ -43,10 +43,10 @@ export default function BentoGrid() {
                     <ul className="space-y-6 text-2xl font-medium">
 
                         {[
-                            "Smart Solar Integration",
-                            "EV Charging Solutions",
-                            "Microgrid Development",
-                            "Advanced Battery Storage",
+                            { name: "Product Deliveries", value: "+25L" },
+                            { name: "Project Executions", value: "+400" },
+                            { name: "Satisfied Customers", value: "+50K" },
+                            { name: "Reserved Energy( Units )", value: "+100 Mill" },
                         ].map((item, i) => (
 
                             <li
@@ -55,13 +55,13 @@ export default function BentoGrid() {
                             >
 
                                 <span className="relative transition-colors duration-300 group-hover:text-green-400">
-                                    {item}
+                                    {item.name}
                                     {/* underline effect */}
                                     <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-green-400 transition-all duration-300 group-hover:w-full"></span>
                                 </span>
 
-                                <span className="text-white/70 transition-colors duration-300 group-hover:text-green-400">
-                                    {String(i + 1).padStart(2, "0")}
+                                <span className="text-white transition-colors duration-300 group-hover:text-green-400">
+                                    {item.value}
                                 </span>
 
                             </li>
@@ -137,10 +137,7 @@ export default function BentoGrid() {
                     </div>
 
                     <p className="text-gray-600 text-sm leading-relaxed text-center">
-                        “Switching to solar with Solva was the best decision we ever made!
-                        The installation process was seamless, and the team was professional
-                        and knowledgeable. Our energy bills have dropped significantly, and
-                        we love knowing we’re contributing to a greener future.”
+                        "FRK Solar Street Lights exceeded my expectations! Bright illumination, durable build, and easy installation. They run flawlessly all night and save on electricity bills. Truly an eco-friendly, cost-effective lighting solution."
                     </p>
 
                 </motion.div>
@@ -156,16 +153,15 @@ export default function BentoGrid() {
                 >
 
                     <h2 className="text-4xl font-bold text-gray-900">
-                        Seamless Smart Solar <br /> Solutions
+                        Sustainable Lighting for  <br /> a Brighter Tomorrow.
                     </h2>
 
                     <p className="mt-3 text-gray-600 text-sm leading-relaxed">
-                        Experience effortless integration of smart solar technology for
-                        efficient and reliable energy solutions.
+                        Illuminate roads and pathways with renewable energy solutions that save money and conserve natural resources.
                     </p>
 
                     <button className="mt-6 px-5 py-2 bg-black text-white rounded-full w-fit hover:bg-gray-900 transition hover:scale-105 hover:cursor-pointer">
-                        Explore →
+                        Explore Now →
                     </button>
 
                 </motion.div>

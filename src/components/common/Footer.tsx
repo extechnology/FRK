@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 
 
@@ -90,12 +91,13 @@ export default function Footer() {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 text-sm">
 
             <div>
-              <h5 className="font-medium mb-3">Learn</h5>
+              <h5 className="font-medium mb-3">Quick Links</h5>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Our mission</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><Link to={'/'}>Home</Link></li>
+                <li><Link to={'/about'}>About</Link></li>
+                <li><Link to={'/service'}>Services</Link></li>
+                <li><Link to={'/product'}>Products</Link></li>
+                <li><Link to={'/project'}>Projects</Link></li>
               </ul>
             </div>
 

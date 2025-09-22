@@ -11,13 +11,8 @@ import CircularText from "../CircularText";
 const slides = [
     {
         image: "https://usercontent.one/wp/www.winssolutions.org/wp-content/uploads/2024/10/image-6-800x500.jpg?media=1732096469",
-        title: "Brighten Your World with Solar Power",
-        desc: "Affordable, efficient, and eco-friendly energy tailored for your home. Start your solar journey today.",
-    },
-    {
-        image: "https://openweather.co.uk/_next/image?url=%2Fapi%2Fmedia%2Ffile%2FSolar_Panels_Renewable_Energy.jpg&w=3840&q=75",
-        title: "Clean energy for modern living",
-        desc: "Power your life with renewable energy that saves money and helps the planet.",
+        title: "Reliable Solar Lights, Day After Day.",
+        desc: "Brighten every corner with eco-friendly solar lights,designed for durability, reliability, and sustainability",
     },
 ];
 
