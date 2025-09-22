@@ -1,7 +1,7 @@
 import { CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion, easeOut } from "framer-motion";
-import type {Variants} from "framer-motion";
+import type { Variants } from "framer-motion";
 
 
 
@@ -54,9 +54,9 @@ export default function AboutUs() {
                         custom={0}
                         className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight"
                     >
-                        Sun-Powered Solutions
+                        Where Technology Meets
                         <br />
-                        for Every Home
+                        the Power of the Sun
                     </motion.h2>
 
                     {/* Large Image with reveal */}
@@ -93,11 +93,7 @@ export default function AboutUs() {
                         custom={1}
                         className="text-gray-600 text-sm sm:text-base max-w-[520px] leading-relaxed"
                     >
-                        Frk Lighting Solutions is a leading provider of solar lighting
-                        solutions for residential and commercial customers. Our mission is
-                        to empower homeowners and businesses with clean, renewable energy
-                        solutions that not only save them money but also contribute to a
-                        greener environment.
+                        FRK specializes in manufacturing high-quality solar street lights and executing turnkey installation projects. Our solutions combine advanced solar technology, energy efficiency, and durability, ensuring reliable outdoor lighting. We deliver customized solar lighting projects for streets, highways, and communities, supporting sustainability and reducing electricity costs.
                     </motion.p>
 
                     {/* Specialty List */}
@@ -111,12 +107,12 @@ export default function AboutUs() {
                         <h3 className="text-2xl font-semibold mb-4">Our Speciality</h3>
                         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                             {[
-                                "Ready for Any Home",
-                                "100% Solar Powered",
-                                "No Wiring, No Fuss",
-                                "Affordable & Efficient",
-                                "Smart Technology",
-                                "Built to Last",
+                                "High-Efficiency Solar Technology",
+                                "Custom Project Solutions",
+                                "Turnkey Installation Services",
+                                "Durability & Weather Resistance",
+                                "Smart & Energy-Saving Features",
+                                "Eco-Friendly & Cost-Effective",
                             ].map((item, idx) => (
                                 <motion.li
                                     key={idx}
@@ -145,7 +141,7 @@ export default function AboutUs() {
                         <img
                             src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1200&auto=format&fit=crop"
                             alt="Easypack factory packaging process"
-                            className="w-full object-cover h-[220px] sm:h-[240px] lg:h-[460px] transform transition-transform duration-500 group-hover:scale-110"
+                            className="w-full object-cover h-[220px] sm:h-[240px] lg:h-[410px] transform transition-transform duration-500 group-hover:scale-110"
                             loading="lazy"
                         />
                         <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
