@@ -9,6 +9,7 @@ const Home = lazy(() => import("./pages/Index"))
 const About = lazy(() => import("./pages/About"))
 const Service = lazy(() => import("./pages/Service"))
 const Products = lazy(() => import("./pages/Products"))
+const ProductDetails = lazy(() => import("./pages/ProductDetails"))
 const Projects = lazy(() => import("./pages/Projects"))
 const Contact = lazy(() => import("./pages/Contact"))
 
@@ -47,6 +48,8 @@ function App() {
           <Route path="service" element={<Service />} />
 
           <Route path="products" element={<Products />} />
+
+          <Route path="products/:id" element={<ProductDetails />} />
 
           <Route path="projects" element={<Projects />} />
 
