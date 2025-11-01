@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
@@ -101,29 +101,48 @@ export default function ProductView() {
                         ))}
                     </div>
 
+
                     {/* Buttons */}
                     <div className="mt-6 flex flex-col sm:flex-row gap-3 w-full">
+
+
                         {/* Order Now Button */}
-                        <Button
-                            size="lg"
-                            className="flex-1 py-3 bg-green-600 hover:bg-green-700 hover:scale-105 hover:shadow-lg transition-all duration-300"
+                        <a
+                            href="https://api.whatsapp.com/send?phone=917025888461"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-1"
                         >
-                            <ShoppingCart className="mr-2 h-5 w-5" />
-                            Order Now
-                        </Button>
+                            <Button
+                                size="lg"
+                                className="w-full py-3 bg-green-600 hover:bg-green-700 hover:scale-105 hover:shadow-lg transition-all duration-300 flex items-center justify-center text-white hover:cursor-pointer"
+                            >
+                                <ShoppingCart className="mr-2 h-5 w-5" />
+                                Order Now
+                            </Button>
+                        </a>
+
+
+
 
                         {/* Get an Estimate Button */}
-                        <Button
-                            size="lg"
-                            variant="outline"
-                            className="flex-1 py-3 border-green-600 text-green-600 hover:bg-green-600 hover:text-white hover:scale-105 hover:shadow-lg transition-all duration-300"
-                        >
-                            <Calculator className="mr-2 h-5 w-5" />
-                            Get an Estimate!
-                        </Button>
+                        <Link to={'/contact'}>
+                            <Button
+                                size="lg"
+                                variant="outline"
+                                className="flex-1 py-3 border-green-600 text-green-600 hover:bg-green-600 hover:text-white hover:scale-105 hover:shadow-lg transition-all duration-300 hover:cursor-pointer"
+                            >
+                                <Calculator className="mr-2 h-5 w-5" />
+                                Get an Estimate!
+                            </Button>
+                        </Link>
+
+
                     </div>
 
+
                 </div>
+
 
             </div>
 
@@ -220,7 +239,7 @@ export default function ProductView() {
 
             </div>
 
-        </div>
+        </div >
 
     );
 
