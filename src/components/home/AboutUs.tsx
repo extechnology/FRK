@@ -59,6 +59,7 @@ export default function AboutUs() {
                         the Power of the Sun
                     </motion.h2>
 
+
                     {/* Large Image with reveal */}
                     <motion.div
                         variants={dropReveal}
@@ -67,23 +68,30 @@ export default function AboutUs() {
                         viewport={{ once: true }}
                         className="relative rounded-2xl overflow-hidden shadow-lg group"
                     >
+
                         <img
-                            src="https://w0.peakpx.com/wallpaper/447/499/HD-wallpaper-city-ferris-wheel-aerial-view-buildings-lights-water.jpg"
+                            src="/hero-about-1.jpg"
                             alt="Packaging industry machinery"
                             className="w-full object-cover min-h-[260px] sm:min-h-[320px] lg:min-h-[640px] transform transition-transform duration-500 group-hover:scale-110"
                             loading="lazy"
                         />
+
                         <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
                         <Link to={"/about"}>
                             <button className="absolute bottom-4 left-4 bg-white text-black font-medium px-4 py-2 rounded-full shadow-md hover:scale-105 transform transition hover:cursor-pointer">
                                 Explore more about us
                             </button>
                         </Link>
+
                     </motion.div>
+
                 </div>
+
 
                 {/* Right Side */}
                 <div className="flex flex-col gap-8 h-full">
+
                     {/* Description */}
                     <motion.p
                         variants={fadeUp}
@@ -95,6 +103,7 @@ export default function AboutUs() {
                     >
                         FRK specializes in manufacturing high-quality solar street lights and executing turnkey installation projects. Our solutions combine advanced solar technology, energy efficiency, and durability, ensuring reliable outdoor lighting. We deliver customized solar lighting projects for streets, highways, and communities, supporting sustainability and reducing electricity costs.
                     </motion.p>
+
 
                     {/* Specialty List */}
                     <motion.div
@@ -128,7 +137,9 @@ export default function AboutUs() {
                                 </motion.li>
                             ))}
                         </ul>
+
                     </motion.div>
+
 
                     {/* Small Image Reveal */}
                     <motion.div
@@ -139,15 +150,21 @@ export default function AboutUs() {
                         className="relative rounded-2xl overflow-hidden shadow-lg group self-stretch"
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1200&auto=format&fit=crop"
+                            src="/hero-about-2.jpg"
                             alt="Easypack factory packaging process"
                             className="w-full object-cover h-[220px] sm:h-[240px] lg:h-[410px] transform transition-transform duration-500 group-hover:scale-110"
                             loading="lazy"
                         />
                         <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     </motion.div>
+
                 </div>
+
+
             </div>
+
         </section>
+
     );
+
 }

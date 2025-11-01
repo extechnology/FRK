@@ -12,17 +12,17 @@ export default function Service() {
         {
             title: "Site Assessment & Feasibility Study",
             desc: "Conducts comprehensive site assessments and feasibility studies to ensure optimal solar street lighting solutions. By analyzing location, sunlight availability, and energy requirements, FRK designs efficient, reliable, and cost-effective systems that maximize performance, minimize wastage, and guarantee sustainable, long-lasting illumination tailored to each project’s unique needs.",
-            img: "https://seia.org/wp-content/uploads/2024/08/AdobeStock_588470815-scaled.jpeg",
+            img: "/site-assesment-study-service.jpg",
         },
         {
             title: "Customized Solar Lighting Design",
             desc: "provides customized solar lighting design tailored to each project’s requirements. By considering street layout, illumination needs, and energy efficiency, FRK creates innovative, reliable, and sustainable solutions that maximize brightness, minimize costs, and ensure long-lasting performance, delivering safe, eco-friendly lighting for communities and commercial spaces",
-            img: "https://seia.org/wp-content/uploads/2024/08/AdobeStock_588470815-scaled.jpeg",
+            img: "/customized-design-service.jpg",
         },
         {
             title: "Supply of High-Quality Solar Lights",
             desc: "Supplies high-quality solar lights, including durable LED fixtures, efficient solar panels, long-lasting batteries, and sturdy poles. Each component is rigorously tested to ensure reliability, optimal performance, and energy efficiency, providing sustainable, low-maintenance, and eco-friendly lighting solutions that brighten streets, public spaces, and communities effectively",
-            img: "https://seia.org/wp-content/uploads/2024/08/AdobeStock_588470815-scaled.jpeg",
+            img: "/supply-of-high-quality-service.jpg",
         },
         {
             title: "Professional Installation & Commissioning",

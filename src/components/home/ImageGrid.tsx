@@ -1,7 +1,12 @@
 import { motion, easeOut } from "framer-motion";
 import type { Variants } from "framer-motion";
 
+
+
+
 export default function ImageGrid() {
+
+
     // Fade-up animation
     const fadeUp: Variants = {
         hidden: { opacity: 0, y: 40 },
@@ -11,6 +16,8 @@ export default function ImageGrid() {
             transition: { delay: i * 0.2, duration: 0.6, ease: easeOut },
         }),
     };
+
+
 
     // Reusable card with hover effects
     const ImageCard = ({
@@ -44,9 +51,15 @@ export default function ImageGrid() {
         </div>
     );
 
+
+
     return (
+
+
         <section className="w-full px-4 sm:px-8 lg:px-20 py-8 sm:py-10">
+        
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        
                 {/* Top Left */}
                 <motion.div
                     variants={fadeUp}
@@ -56,7 +69,7 @@ export default function ImageGrid() {
                     custom={0}
                 >
                     <ImageCard
-                        src="https://img.freepik.com/free-photo/man-with-white-helmet-near-solar-panel_1157-30009.jpg?semt=ais_incoming&w=740&q=80"
+                        src="/image-gird-1.jpg"
                         alt="Engineer at solar panels"
                         description="Engineer at solar panels"
                     />
@@ -71,7 +84,7 @@ export default function ImageGrid() {
                     custom={1}
                 >
                     <ImageCard
-                        src="https://advocateturkey.com/wp-content/uploads/2025/07/ChatGPT-Image-22-Tem-2025-13_38_23.png"
+                        src="/image-gird-2.jpg"
                         alt="Mother and child at solar panels"
                         description="Family exploring solar energy"
                     />
@@ -87,7 +100,7 @@ export default function ImageGrid() {
                     className="sm:col-span-2"
                 >
                     <ImageCard
-                        src="https://plus.unsplash.com/premium_photo-1682148026899-d21f17c04e80?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c29sYXIlMjBwYW5lbHxlbnwwfHwwfHx8MA%3D%3D"
+                        src="/image-gird-3.jpg"
                         alt="Engineers walking at solar farm"
                         description="Engineers walking at solar farm"
                     />

@@ -22,9 +22,7 @@ export const productData: ProductProps[] = [
         shortDescription: "Energy-efficient solar street lights with durable LiFePO₄ batteries, advanced tech, and easy installation for reliable, sustainable public lighting.",
         description: "Solar Street Lights offer a wide range of energy-efficient solutions with advanced technology, remote control systems, and durable LiFePO₄ batteries, ensuring reliable performance, easy installation, and sustainable lighting for streets and public spaces.",
         images: [
-            "https://media.istockphoto.com/id/1278723493/photo/solar-battery-and-lantern-in-park-close-up-side-view.jpg?s=612x612&w=0&k=20&c=v8vXDS2PPkdjp2quuugKSxFtr6-sFpTyhmeyeknP66M=",
-            "https://media.istockphoto.com/id/1278723493/photo/solar-battery-and-lantern-in-park-close-up-side-view.jpg?s=612x612&w=0&k=20&c=v8vXDS2PPkdjp2quuugKSxFtr6-sFpTyhmeyeknP66M=",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqOeocq3xdRhG3xLZP4AwP-QdIfj2TYGUxaIgGPI7LlXY-4xquRsdpiMgrNXt5ezoSJ6E&usqp=CAU",
+            "/Solar Street Lights for Outdoo-600W-product.jpg"
         ],
         specifications: [
             { label: "Battery", value: "3.2V / 50,000 mAh (LiFePO₄, Aluminium)" },
@@ -61,9 +59,7 @@ export const productData: ProductProps[] = [
         shortDescription: "Energy-efficient solar street lights with durable LiFePO₄ batteries, advanced tech, and easy installation for reliable, sustainable public lighting.",
         description: "Solar Street Lights offer a wide range of energy-efficient solutions with advanced technology, remote control systems, and durable LiFePO₄ batteries, ensuring reliable performance, easy installation, and sustainable lighting for streets and public spaces.",
         images: [
-            "https://media.istockphoto.com/id/1278723493/photo/solar-battery-and-lantern-in-park-close-up-side-view.jpg?s=612x612&w=0&k=20&c=v8vXDS2PPkdjp2quuugKSxFtr6-sFpTyhmeyeknP66M=",
-            "https://media.istockphoto.com/id/1278723493/photo/solar-battery-and-lantern-in-park-close-up-side-view.jpg?s=612x612&w=0&k=20&c=v8vXDS2PPkdjp2quuugKSxFtr6-sFpTyhmeyeknP66M=",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqOeocq3xdRhG3xLZP4AwP-QdIfj2TYGUxaIgGPI7LlXY-4xquRsdpiMgrNXt5ezoSJ6E&usqp=CAU",
+            "/Solar Street Lights for Outdoo-800W-product.jpg"
         ],
         specifications: [
             { label: "Battery", value: "3.2V / 80,000 mAh (LiFePO₄, Aluminium)" },
@@ -100,9 +96,7 @@ export const productData: ProductProps[] = [
         shortDescription: "Energy-efficient solar street lights with durable LiFePO₄ batteries, advanced tech, and easy installation for reliable, sustainable public lighting.",
         description: "Solar Street Lights offer a wide range of energy-efficient solutions with advanced technology, remote control systems, and durable LiFePO₄ batteries, ensuring reliable performance, easy installation, and sustainable lighting for streets and public spaces.",
         images: [
-            "https://media.istockphoto.com/id/1278723493/photo/solar-battery-and-lantern-in-park-close-up-side-view.jpg?s=612x612&w=0&k=20&c=v8vXDS2PPkdjp2quuugKSxFtr6-sFpTyhmeyeknP66M=",
-            "https://media.istockphoto.com/id/1278723493/photo/solar-battery-and-lantern-in-park-close-up-side-view.jpg?s=612x612&w=0&k=20&c=v8vXDS2PPkdjp2quuugKSxFtr6-sFpTyhmeyeknP66M=",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqOeocq3xdRhG3xLZP4AwP-QdIfj2TYGUxaIgGPI7LlXY-4xquRsdpiMgrNXt5ezoSJ6E&usqp=CAU",
+            "/Solar Street Lights for Outdoo-1000W-product.jpg"
         ],
         specifications: [
             { label: "Battery", value: "3.2V / 120,000 mAh (LiFePO₄, Aluminium)" },

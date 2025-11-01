@@ -10,7 +10,7 @@ import CircularText from "../CircularText";
 // Slider data
 const slides = [
     {
-        image: "https://usercontent.one/wp/www.winssolutions.org/wp-content/uploads/2024/10/image-6-800x500.jpg?media=1732096469",
+        image: "/hero-banner.jpg",
         title: "Reliable Solar Lights, Day After Day.",
         desc: "Brighten every corner with eco-friendly solar lights,designed for durability, reliability, and sustainability",
     },
@@ -38,9 +38,13 @@ export default function HeroSlider() {
                 autoplay={{ delay: 5000, disableOnInteraction: false }}
                 className="w-full h-full"
             >
+
                 {slides.map((slide, index) => (
+
                     <SwiperSlide key={index}>
+
                         <div className="relative w-full h-full">
+
                             {/* Background Image */}
                             <img
                                 src={slide.image}

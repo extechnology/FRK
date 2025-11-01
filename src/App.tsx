@@ -1,6 +1,7 @@
 import { Suspense, lazy } from "react"
 import { Route, Routes } from "react-router-dom"
 import ScrollToTop from "./components/common/ScrollToTop"
+import SuspenseLoader from "./components/common/SuspenseLoader"
 
 
 
@@ -28,8 +29,7 @@ function App() {
   return (
 
 
-    <Suspense fallback={<div>Loading...</div>}>
-
+    <Suspense fallback={<SuspenseLoader />}>
 
       {/* Scroll to top */}
       <ScrollToTop />

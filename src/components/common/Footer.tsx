@@ -38,35 +38,49 @@ export default function Footer() {
           <div className="flex">
 
             <a
-              href="#"
+              href="https://www.facebook.com/frklighting/"
+              target="_blank"
               className="text-gray-300 hover:text-white w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform"
             >
               <i className="fa-brands fa-facebook fa-xl"></i>
             </a>
 
             <a
-              href="#"
+              href="https://www.instagram.com/frk.lighting/"
+              target="_blank"
               className="text-gray-300 hover:text-white w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform"
             >
               <i className="fa-brands fa-instagram fa-xl"></i>
             </a>
 
+
             <a
-              href="#"
+              href="linkedin.com/company/frklighting"
+              target="_blank"
+              className="text-gray-300 hover:text-white w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform"
+            >
+              <i className="fa-brands fa-linkedin fa-xl"></i>
+            </a>
+
+
+            <a
+              href="https://x.com/frklighting"
               className="text-gray-300 hover:text-white w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform"
             >
               <i className="fa-brands fa-x-twitter fa-xl"></i>
             </a>
 
             <a
-              href="#"
+              href="https://in.pinterest.com/frklighting/"
+              target="_blank"
               className="text-gray-300 hover:text-white w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform"
             >
               <i className="fa-brands fa-pinterest fa-xl"></i>
             </a>
 
             <a
-              href="#"
+              href="https://www.youtube.com/@FRK089"
+              target="_blank"
               className="text-gray-300 hover:text-white w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform"
             >
               <i className="fa-brands fa-youtube fa-xl"></i>
