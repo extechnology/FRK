@@ -47,10 +47,12 @@ export default function About() {
                         className="mt-8 md:mt-12"
                     >
                         <img
-                            src="https://cdn.britannica.com/91/222691-050-E8BDF226/installing-solar-panels.jpg"
+                            src="/about-us-hero.jpg"
+                            loading="lazy"
                             alt="Team collaboration"
                             className="w-full rounded-lg md:rounded-xl lg:rounded-2xl shadow-md"
                         />
+
                     </motion.div>
 
                 </div>
@@ -86,9 +88,10 @@ export default function About() {
                         className="flex justify-center"
                     >
                         <img
-                            src="https://t4.ftcdn.net/jpg/02/20/30/97/360_F_220309764_saqqOIGaPKdnjmQacHmNkDOezY0uyOFg.jpg"
+                            src="/about-us-1.jpg"
                             alt="Growth Chart"
-                            className="w-full max-w-xl rounded-xl shadow-md"
+                            loading="lazy"
+                            className="w-full h-[50vh] max-w-xl rounded-xl shadow-md"
                         />
                     </motion.div>
                 </div>
@@ -107,9 +110,10 @@ export default function About() {
                         className="flex justify-center"
                     >
                         <img
-                            src="https://t4.ftcdn.net/jpg/02/20/30/97/360_F_220309764_saqqOIGaPKdnjmQacHmNkDOezY0uyOFg.jpg"
+                            src="/about-us-2.jpg"
                             alt="Growth Chart"
-                            className="w-full max-w-4xl rounded-xl shadow-md"
+                            loading="lazy"
+                            className="w-full h-[50vh] max-w-xl rounded-xl shadow-md"
                         />
                     </motion.div>
 
@@ -163,9 +167,10 @@ export default function About() {
                         className="flex justify-center"
                     >
                         <img
-                            src="https://t4.ftcdn.net/jpg/02/20/30/97/360_F_220309764_saqqOIGaPKdnjmQacHmNkDOezY0uyOFg.jpg"
+                            src="/about-us-3.jpg"
+                            loading="lazy"
                             alt="Growth Chart"
-                            className="w-full max-w-xl rounded-xl shadow-md"
+                            className="w-full h-[50vh] max-w-xl rounded-xl shadow-md"
                         />
                     </motion.div>
                 </div>

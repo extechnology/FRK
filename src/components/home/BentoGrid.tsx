@@ -76,7 +76,7 @@ export default function BentoGrid() {
 
                 {/* Middle Image Card */}
                 <motion.div
-                    className="rounded-xl overflow-hidden h-56 md:h-[320px]"
+                    className="rounded-xl overflow-hidden h-56 md:h-[320px] border-2"
                     custom={1}
                     variants={cardVariants}
                     initial="hidden"
@@ -84,7 +84,7 @@ export default function BentoGrid() {
                     viewport={{ once: true, amount: 0.2 }}
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?q=80&w=1000"
+                        src="/bento-gird-1.jpg"
                         alt="Solar Panel Technician"
                         loading="lazy"
                         className="w-full h-full object-cover rounded-xl"
@@ -94,7 +94,7 @@ export default function BentoGrid() {
 
                 {/* Right Image Card */}
                 <motion.div
-                    className="rounded-xl overflow-hidden h-56 md:h-[320px]"
+                    className="rounded-xl overflow-hidden h-56 md:h-[320px] border-2"
                     custom={2}
                     variants={cardVariants}
                     initial="hidden"
@@ -102,7 +102,7 @@ export default function BentoGrid() {
                     viewport={{ once: true, amount: 0.2 }}
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1000"
+                        src="/bento-gird-2.jpg"
                         alt="Solar Worker"
                         loading="lazy"
                         className="w-full h-full object-cover rounded-xl"
@@ -114,7 +114,7 @@ export default function BentoGrid() {
 
 
 
-            {/* BOTTOM ROW: two cards */}
+            {/* Reviews Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
 
                 <motion.div

@@ -8,27 +8,15 @@ import HeroBanner from "@/components/common/HeroBanner";
 const solutions = [
     {
         title: "Homeowner Solutions",
-        img: "https://i0.wp.com/www.ecomena.org/wp-content/uploads/2024/08/optimal-solar-system-size.jpg",
+        img: "/Home-owner-project.jpg",
     },
     {
         title: "Business Owner Solutions",
-        img: "https://png.pngtree.com/thumb_back/fh260/background/20231221/pngtree-solar-photovoltaic-panel-new-energy-clean-energy-power-generation-power-project-photo-image_15555509.png",
+        img: "/Bussiness-owner-project.jpg",
     },
     {
         title: "Utility-Scale Owner Solutions",
-        img: "https://qmerit.com/wp-content/uploads/2024/03/Making-Solar-Work-for-You-Understanding-How-Solar-Panels-Work-on-a-House-featured.jpg",
-    },
-    {
-        title: "Smart String ESS Solutions",
-        img: "https://solar.huawei.com/-/media/SolarV4/solar-version2/common/blog/2023/solar-installation-system/img01.jpg",
-    },
-    {
-        title: "Smart Micro-grid Solutions",
-        img: "https://www.solarpanelsingapore.com/wp-content/uploads/2023/08/Solar-Panel-Installation-in-Singapore-for-Homeowners.jpg",
-    },
-    {
-        title: "Smart Micro-grid Solutions",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa9BH6L-SkXRPNpjE6dXtWvhDeDMUfLRCoUA&s",
+        img: "/utility-scale-project.jpg",
     },
 ];
 
