@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Mail, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 
@@ -65,6 +66,7 @@ export default function Footer() {
 
             <a
               href="https://x.com/frklighting"
+              target="_blank"
               className="text-gray-300 hover:text-white w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform"
             >
               <i className="fa-brands fa-x-twitter fa-xl"></i>
@@ -107,11 +109,11 @@ export default function Footer() {
             <div>
               <h5 className="font-medium mb-3">Quick Links</h5>
               <ul className="space-y-2 text-gray-400">
-                <li><Link to={'/'}>Home</Link></li>
-                <li><Link to={'/about'}>About</Link></li>
-                <li><Link to={'/service'}>Services</Link></li>
-                <li><Link to={'/product'}>Products</Link></li>
-                <li><Link to={'/project'}>Projects</Link></li>
+                <li className="hover:text-gray-200"><Link to={'/'}>Home</Link></li>
+                <li className="hover:text-gray-200"><Link to={'/about'}>About</Link></li>
+                <li className="hover:text-gray-200"><Link to={'/service'}>Services</Link></li>
+                <li className="hover:text-gray-200"><Link to={'/product'}>Products</Link></li>
+                <li className="hover:text-gray-200"><Link to={'/project'}>Projects</Link></li>
               </ul>
             </div>
 
@@ -119,27 +121,46 @@ export default function Footer() {
             <div>
               <h5 className="font-medium mb-3">Contact</h5>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Knowledge base</a></li>
-                <li><a href="#">Academy</a></li>
-                <li><a href="#">Support</a></li>
+                <li className="flex items-center hover:text-gray-200 transition-colors">
+                  <Phone size={16} className="mr-2 text-gray-400" />
+                  <a href="tel:+917025888461" target="_blank" className="hover:text-gray-200">
+                    +91 70258 88461
+                  </a>
+                </li>
+                <li className="flex items-center hover:text-gray-200 transition-colors">
+                  <Mail size={16} className="mr-2 text-gray-400" />
+                  <a href="mailto:frklighting@gmail.com" target="_blank" className="hover:text-gray-200">
+                    frklighting@gmail.com
+                  </a>
+                </li>
               </ul>
             </div>
 
+
+
             <div>
               <h5 className="font-medium mb-3">Address</h5>
-              <p className="text-gray-400 text-sm">
-                475 Cherry Dr, Troy, Michigan <br />
-                46546 United States <br />
-                (258 525-2353)
-              </p>
+              <a
+                href="https://www.google.com/maps?q=Kottumuchi,Kodakkad,Malappuram,Kerala,673635"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 text-sm hover:text-gray-200 transition-colors"
+              >
+                Kottumuchi, Kodakkad<br />
+                Malappuram, Kerala, 673635
+              </a>
             </div>
+
+
 
           </div>
 
+
         </div>
 
+
       </div>
+
 
       <div className="flex flex-col text-gray-400 items-center justify-center mt-5 sm:mt-0">
         <a href="#" className="hover-cursor-pointer text-xs">©2025 FRK LIGHTING SOLUTIONS All rights reserved</a>

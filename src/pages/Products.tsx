@@ -2,7 +2,7 @@ import HeroBanner from "@/components/common/HeroBanner";
 import { motion } from "framer-motion";
 import { ShoppingCart, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import type { ProductProps } from "@/lib/mockdata";
 import { productData } from "@/lib/mockdata";
 
@@ -81,40 +81,52 @@ const ProductCard: React.FC<ProductProps> = ({ id, title, subtitle, shortDescrip
 
 
             {/* Image */}
-            <div className="relative h-72 overflow-hidden">
-                <motion.img
-                    src={images[0]}
-                    alt={title}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.8 }}
-                    loading="lazy"
-                    className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 text-white">
-                    <h2 className="text-lg font-bold">{title}</h2>
-                    <p className="text-xs opacity-80">{subtitle}</p>
+            <Link to={`/products/${id}`} className="relative h-72 overflow-hidden">
+                <div className="relative h-72 overflow-hidden">
+                    <motion.img
+                        src={images[0]}
+                        alt={title}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.8 }}
+                        loading="lazy"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4 text-white">
+                        <h2 className="text-lg font-bold">{title}</h2>
+                        <p className="text-xs opacity-80">{subtitle}</p>
+                    </div>
                 </div>
-            </div>
+            </Link>
+
 
             {/* Content */}
             <div className="p-6 flex flex-col flex-grow">
+
                 <p className="text-gray-600 text-sm flex-grow">{shortDescription}</p>
 
                 {/* CTA */}
                 <div className="mt-6 flex gap-3">
-                    
+
                     <motion.div whileTap={{ scale: 0.95 }} className="w-full">
-                        <Button className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold shadow-md hover:from-green-600 hover:to-green-700 rounded-xl">
-                            <ShoppingCart size={18} /> Order Now
-                        </Button>
+                        <a
+                            href="https://api.whatsapp.com/send?phone=917025888461"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full"
+                        >
+                            <Button className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold shadow-md hover:from-green-600 hover:to-green-700 rounded-xl flex items-center justify-center hover:cursor-pointer">
+                                <ShoppingCart size={18} className="mr-2" /> Order Now
+                            </Button>
+                        </a>
                     </motion.div>
+
 
                     <motion.div whileTap={{ scale: 0.95 }} className="w-full">
                         <Button
                             onClick={() => navigate(`/products/${id}`)}
-                            className="w-full bg-gray-100 text-gray-800 hover:bg-gray-200 rounded-xl"
+                            className="w-full bg-gray-100 text-gray-800 hover:bg-gray-200 rounded-xl hover:cursor-pointer"
                         >
                             <Eye size={18} /> View Product
                         </Button>

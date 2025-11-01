@@ -124,7 +124,8 @@ export default function Contact() {
                                     <MapPin className="w-6 h-6 text-blue-600" />
                                     <div>
                                         <p className="font-medium">Address</p>
-                                        <p className="text-sm">119 Nueces St, Austin, TX 78701</p>
+                                        <p className="text-sm">Kottumuchi, Kodakkad
+                                            Malappuram, Kerala, 673635</p>
                                     </div>
                                 </div>
 
@@ -132,7 +133,9 @@ export default function Contact() {
                                     <Phone className="w-6 h-6 text-blue-600" />
                                     <div>
                                         <p className="font-medium">Phone</p>
-                                        <p className="text-sm">+1 (469) 655-4099</p>
+                                        <a href="tel:+917025888461" target="_blank">
+                                            +91 70258 88461
+                                        </a>
                                     </div>
                                 </div>
 
@@ -140,14 +143,16 @@ export default function Contact() {
                                     <Mail className="w-6 h-6 text-blue-600" />
                                     <div>
                                         <p className="font-medium">Email</p>
-                                        <p className="text-sm">support@appliedmind.com</p>
+                                        <a href="mailto:frklighting@gmail.com" target="_blank">
+                                            frklighting@gmail.com
+                                        </a>
                                     </div>
                                 </div>
-                    
+
                             </div>
-                    
+
                         </div>
-                    
+
                     </div>
 
                 </section>

@@ -11,8 +11,8 @@ const WhatsAppChat = () => {
 
 
     // Phone number for WhatsApp chat - replace with your actual number
-    const phoneNumber = "";
-    const message = "Hai ExBot, I would like to know more about your services!";
+    const phoneNumber = "+917025888461";
+    const message = "Hai Frk Lighting Solutions, I would like to know more about your services!";
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
 
 
