@@ -27,32 +27,32 @@ export default function Service() {
         {
             title: "Professional Installation & Commissioning",
             desc: "offers professional installation and commissioning of solar street lighting systems, ensuring precise setup and seamless operation. Their expert team handles pole erection, light fixture mounting, wiring, and system integration with strict safety standards. Post-installation, each system is tested for optimal performance, reliability, and energy efficiency, providing clients with a fully operational, low-maintenance, and sustainable solar lighting solution that illuminates streets, parks, and public spaces effectively",
-            img: "https://seia.org/wp-content/uploads/2024/08/AdobeStock_588470815-scaled.jpeg",
+            img: "/Professional-Installation-Commissioning-service.jpg",
         },
         {
             title: "Project Management & Execution",
             desc: "Provides end-to-end project management and execution for solar street lighting projects. From planning and resource allocation to scheduling, procurement, and on-site supervision, FRK ensures timely, cost-effective, and high-quality delivery. Their experienced team coordinates all aspects of the project, including permits, installations, and quality checks, guaranteeing smooth execution, optimal system performance, and sustainable, reliable lighting solutions that meet client expectations and community needs",
-            img: "https://seia.org/wp-content/uploads/2024/08/AdobeStock_588470815-scaled.jpeg",
+            img: "/Project-Management-Execution-service.jpg",
         },
         {
             title: "Integration of Smart Controls",
             desc: "Integrates smart control systems into solar street lights to enhance efficiency and convenience. Features like timers, motion sensors, dimming controls, and remote monitoring optimize energy usage, extend battery life, and ensure consistent illumination. These intelligent systems provide automated, adaptive lighting solutions that reduce operational costs, improve safety, and deliver reliable, eco-friendly street lighting tailored to the specific needs of communities and commercial spaces",
-            img: "https://seia.org/wp-content/uploads/2024/08/AdobeStock_588470815-scaled.jpeg",
+            img: "/Integration-of-Smart-Controls-service.jpg",
         },
         {
             title: "Maintenance & Troubleshooting Services",
             desc: "Comprehensive maintenance and troubleshooting services for solar street lights, ensuring long-term performance and reliability. Their skilled technicians conduct routine inspections, cleaning, battery checks, and repairs, promptly addressing any issues. By maintaining optimal system functionality, FRK minimizes downtime, extends equipment lifespan, and guarantees consistent, energy-efficient, and safe illumination for streets, parks, and public spaces, providing clients with peace of mind and sustainable lighting solutions",
-            img: "https://seia.org/wp-content/uploads/2024/08/AdobeStock_588470815-scaled.jpeg",
+            img: "/Maintenance-Troubleshooting-Services.jpg",
         },
         {
             title: "After-Sales Support & Warranty Services",
             desc: "Provides reliable after-sales support and warranty services for solar street lights, ensuring customer satisfaction and system longevity. Their dedicated team offers technical assistance, troubleshooting, and prompt resolution of issues, while honoring warranty commitments. This comprehensive support guarantees uninterrupted, efficient, and sustainable lighting, giving clients peace of mind and confidence in their investment, while reinforcing FRK’s commitment to quality, reliability, and eco-friendly solar solutions for communities and commercial projects",
-            img: "https://seia.org/wp-content/uploads/2024/08/AdobeStock_588470815-scaled.jpeg",
+            img: "/After-Sales-Support-Warranty-Services.jpg",
         },
         {
             title: "Sustainability & Energy Consulting",
             desc: "offers expert sustainability and energy consulting for solar street lighting projects, helping clients optimize energy usage, reduce carbon footprint, and achieve cost savings. Their team provides guidance on renewable energy integration, efficient system design, and eco-friendly practices. By combining technical expertise with sustainable solutions, FRK ensures reliable, energy-efficient, and environmentally responsible lighting that supports the Green Revolution while delivering long-term benefits to communities, businesses, and public spaces",
-            img: "https://seia.org/wp-content/uploads/2024/08/AdobeStock_588470815-scaled.jpeg",
+            img: "/Sustainability-Energy-Consulting-service.jpg",
         },
     ];
 
@@ -80,7 +80,7 @@ export default function Service() {
             <HeroBanner
                 title="Our Services"
                 desc="Delivering reliable, energy-efficient, and sustainable lighting solutions that brighten communities and support the Green Revolution"
-                image="https://www.dolphin-charger.com/media/global/R%C3%A9gulateurs-MPPT-r%C3%A9gulateurs-charge-solaire.jpg"
+                image="/Service-banner.jpg"
 
             />
 

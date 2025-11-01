@@ -18,7 +18,7 @@ export default function About() {
             <HeroBanner
                 title="About Us"
                 desc="Brighten every corner with eco-friendly solar lights,designed for durability, reliability, and sustainability"
-                image="https://www.bls.gov/spotlight/2022/the-construction-industry-labor-force-2003-to-2020/images/cover-image.jpg"
+                image="/About-us-Banner.jpg"
             />
 
 

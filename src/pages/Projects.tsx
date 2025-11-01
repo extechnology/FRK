@@ -50,7 +50,7 @@ export default function Projects() {
             <HeroBanner
                 title="Our Projects"
                 desc=" Discover our successful solar and energy projects, empowering communities and businesses with sustainable solutions worldwide."
-                image="https://www.zurich.co.uk/-/media/news-and-insight/images/featured-banner/how_safe_are_solar_panels_desktop.jpg?w=1155&hash=6CCE0E8BA4A5857FBDDAE46D3AFAC444"
+                image="/Project-banner.jpg"
             />
 
 

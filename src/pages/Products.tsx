@@ -21,7 +21,7 @@ export default function Products() {
             <HeroBanner
                 title="Our Products"
                 desc="Lighting the way with Renewable Energy where Innovation meets illumination"
-                image="https://static.vecteezy.com/system/resources/thumbnails/046/371/170/small_2x/man-installs-solar-panels-on-roof-worker-installing-solar-panels-outdoors-photo.jpg"
+                image="/Product-banner.jpg"
             />
 
 
@@ -81,7 +81,7 @@ const ProductCard: React.FC<ProductProps> = ({ id, title, subtitle, shortDescrip
 
 
             {/* Image */}
-            <div className="relative h-56 overflow-hidden">
+            <div className="relative h-72 overflow-hidden">
                 <motion.img
                     src={images[0]}
                     alt={title}

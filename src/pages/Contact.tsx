@@ -26,7 +26,7 @@ export default function Contact() {
             <HeroBanner
                 title="Contact Us"
                 desc="We're here to help you with any questions or concerns you may have. Reach out to us and let us know how we can assist you."
-                image="https://assets.ratedpower.com/1694513072-the-20solar-20industry-20in-20africa-205-20trends-20driving-20the-20growth.jpeg?auto=format&dpr=0.67&w=1920"
+                image="/contactus-banner.jpg"
             />
 
 
