@@ -85,7 +85,7 @@ export default function Service() {
             />
 
 
-            <section className="mx-auto px-6 pt-2 pb-10 sm:pb-16 sm:pt-3">
+            <section className="mx-auto px-2 sm:px-6 pt-2 pb-10 sm:pb-16 sm:pt-3">
 
 
                 {/* Heading */}

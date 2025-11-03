@@ -130,7 +130,7 @@ export default function ProductView() {
                             <Button
                                 size="lg"
                                 variant="outline"
-                                className="flex-1 py-3 border-green-600 text-green-600 hover:bg-green-600 hover:text-white hover:scale-105 hover:shadow-lg transition-all duration-300 hover:cursor-pointer"
+                                className="w-full flex-1 py-3 border-green-600 text-green-600 hover:bg-green-600 hover:text-white hover:scale-105 hover:shadow-lg transition-all duration-300 hover:cursor-pointer"
                             >
                                 <Calculator className="mr-2 h-5 w-5" />
                                 Get an Estimate!

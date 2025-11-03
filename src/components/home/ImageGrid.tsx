@@ -1,5 +1,6 @@
 import { motion, easeOut } from "framer-motion";
 import type { Variants } from "framer-motion";
+import { Link } from "react-router-dom";
 
 
 
@@ -16,7 +17,6 @@ export default function ImageGrid() {
             transition: { delay: i * 0.2, duration: 0.6, ease: easeOut },
         }),
     };
-
 
 
     // Reusable card with hover effects
@@ -44,9 +44,11 @@ export default function ImageGrid() {
             {/* Text + Button */}
             <div className="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transform translate-y-5 group-hover:translate-y-0 transition-all duration-500">
                 <p className="text-white text-lg mb-3">{description}</p>
-                <button className="px-4 py-2 bg-white text-black rounded-lg font-medium shadow-md hover:bg-gray-200 transition">
-                    Learn More
-                </button>
+                <Link to={'/about'}>
+                    <button className="px-4 py-2 bg-white text-black rounded-lg font-medium shadow-md hover:bg-gray-200 transition">
+                        Learn More
+                    </button>
+                </Link>
             </div>
         </div>
     );
@@ -57,9 +59,9 @@ export default function ImageGrid() {
 
 
         <section className="w-full px-4 sm:px-8 lg:px-20 py-8 sm:py-10">
-        
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        
+
                 {/* Top Left */}
                 <motion.div
                     variants={fadeUp}
