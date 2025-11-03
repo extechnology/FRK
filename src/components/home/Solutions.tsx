@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 
 
@@ -50,9 +51,11 @@ export default function Solutions() {
                     </p>
                 </div>
 
-                <Button className="bg-black text-white rounded-full px-6 py-2 text-sm hover:bg-gray-900 hover:cursor-pointer hover:scale-105">
-                    Explore Our Projects →
-                </Button>
+                <Link to={'/projects'}>
+                    <Button className="bg-black text-white rounded-full px-6 py-2 text-sm hover:bg-gray-900 hover:cursor-pointer hover:scale-105">
+                        Explore Our Projects →
+                    </Button>
+                </Link>
 
             </motion.div>
 

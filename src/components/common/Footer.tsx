@@ -113,7 +113,7 @@ export default function Footer() {
                 <li className="hover:text-gray-200"><Link to={'/about'}>About</Link></li>
                 <li className="hover:text-gray-200"><Link to={'/service'}>Services</Link></li>
                 <li className="hover:text-gray-200"><Link to={'/product'}>Products</Link></li>
-                <li className="hover:text-gray-200"><Link to={'/project'}>Projects</Link></li>
+                <li className="hover:text-gray-200"><Link to={'/projects'}>Projects</Link></li>
               </ul>
             </div>
 

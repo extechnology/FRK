@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
+import { Link } from "react-router-dom";
 
 
 
@@ -32,7 +33,7 @@ export default function BentoGrid() {
 
                 {/* Left Green Services Card */}
                 <motion.div
-                    className="bg-green-800 text-white rounded-xl px-10 flex flex-col justify-center md:row-span-2 md:h-[320px]"
+                    className="bg-green-800 text-white rounded-xl px-5 sm:px-10 flex flex-col justify-center md:row-span-2 md:h-[320px]"
                     custom={0}
                     variants={cardVariants}
                     initial="hidden"
@@ -40,7 +41,7 @@ export default function BentoGrid() {
                     viewport={{ once: true, amount: 0.2 }}
                 >
 
-                    <ul className="space-y-6 text-2xl font-medium">
+                    <ul className="space-y-6 text-2xl font-medium py-5 sm:py-0">
 
                         {[
                             { name: "Product Deliveries", value: "+25L" },
@@ -76,7 +77,7 @@ export default function BentoGrid() {
 
                 {/* Middle Image Card */}
                 <motion.div
-                    className="rounded-xl overflow-hidden h-56 md:h-[320px] border-2"
+                    className="rounded-xl overflow-hidden h-90 p-5 sm:p-0 md:h-[320px] border-2"
                     custom={1}
                     variants={cardVariants}
                     initial="hidden"
@@ -94,7 +95,7 @@ export default function BentoGrid() {
 
                 {/* Right Image Card */}
                 <motion.div
-                    className="rounded-xl overflow-hidden h-56 md:h-[320px] border-2"
+                    className="rounded-xl overflow-hidden h-90 p-5 sm:p-0 md:h-[320px] border-2"
                     custom={2}
                     variants={cardVariants}
                     initial="hidden"
@@ -160,9 +161,11 @@ export default function BentoGrid() {
                         Illuminate roads and pathways with renewable energy solutions that save money and conserve natural resources.
                     </p>
 
-                    <button className="mt-6 px-5 py-2 bg-black text-white rounded-full w-fit hover:bg-gray-900 transition hover:scale-105 hover:cursor-pointer">
-                        Explore Now →
-                    </button>
+                    <Link to={'/about'}>
+                        <button className="mt-6 px-5 py-2 bg-black text-white rounded-full w-fit hover:bg-gray-900 transition hover:scale-105 hover:cursor-pointer">
+                            Explore Now →
+                        </button>
+                    </Link>
 
                 </motion.div>
 
