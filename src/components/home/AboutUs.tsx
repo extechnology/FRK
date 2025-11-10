@@ -52,11 +52,11 @@ export default function AboutUs() {
                         whileInView="visible"
                         viewport={{ once: true }}
                         custom={0}
-                        className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight"
+                        className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight"
                     >
-                        Where Technology Meets
+                       Shining Light on Every 
                         <br />
-                        the Power of the Sun
+                        Pathway with the Sun
                     </motion.h2>
 
 
