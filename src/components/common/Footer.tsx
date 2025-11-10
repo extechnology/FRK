@@ -124,7 +124,13 @@ export default function Footer() {
                 <li className="flex items-center hover:text-gray-200 transition-colors">
                   <Phone size={16} className="mr-2 text-gray-400" />
                   <a href="tel:+917025888461" target="_blank" className="hover:text-gray-200">
-                    +91 70258 88461
+                    +91 7025888461
+                  </a>
+                </li>
+                <li className="flex items-center hover:text-gray-200 transition-colors">
+                  <Phone size={16} className="mr-2 text-gray-400" />
+                  <a href="tel:+917025888462" target="_blank" className="hover:text-gray-200">
+                    +91 7025888462
                   </a>
                 </li>
                 <li className="flex items-center hover:text-gray-200 transition-colors">
@@ -147,7 +153,7 @@ export default function Footer() {
                 className="text-gray-400 text-sm hover:text-gray-200 transition-colors"
               >
                 Kottumuchi, Kodakkad<br />
-                Malappuram, Kerala, 673635
+                Malappuram, Kerala, 676319
               </a>
             </div>
 

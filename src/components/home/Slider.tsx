@@ -3,6 +3,7 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import { motion } from "framer-motion";
 import CircularText from "../CircularText";
+import { Link } from "react-router-dom";
 
 
 
@@ -82,32 +83,39 @@ export default function HeroSlider() {
                                 transition={{ delay: 0.6, duration: 0.6 }}
                                 className="absolute sm:bottom-16 bottom-10 sm:left-16 left-10 z-20"
                             >
-                                <div className="relative w-24 h-24 flex items-center justify-center">
-                                    {/* Explore Button */}
-                                    <div className="w-24 h-24 text-xl rounded-full bg-white flex items-center justify-center text-black font-semibold shadow-md cursor-pointer hover:scale-105 transition-transform relative z-10">
-                                        Explore
+                                <Link to={'/products'}>
+                                    <div className="relative w-24 h-24 flex items-center justify-center">
+                                        {/* Explore Button */}
+
+                                        <div className="w-24 h-24 text-xl rounded-full bg-white flex items-center justify-center text-black font-semibold shadow-md cursor-pointer hover:scale-105 transition-transform relative z-10">
+                                            Explore
+                                        </div>
+
+                                        {/* Circular Text around border */}
+                                        <div className="absolute inset-0 flex items-center justify-center z-10">
+                                            <CircularText
+                                                text="EXPLORE*EXPLORE*EXPLORE*"
+                                                onHover="speedUp"
+                                                spinDuration={20}
+                                                className=""
+                                            />
+                                        </div>
+
+
                                     </div>
-                                    {/* Circular Text around border */}
-                                    <div className="absolute inset-0 flex items-center justify-center z-10">
-                                        <CircularText
-                                            text="EXPLORE*EXPLORE*EXPLORE*"
-                                            onHover="speedUp"
-                                            spinDuration={20}
-                                            className=""
-                                        />
-                                    </div>
-                                </div>
+                                </Link>
                             </motion.div>
 
                         </div>
 
-                    </SwiperSlide>
+                    </SwiperSlide >
 
-                ))}
+                ))
+                }
 
-            </Swiper>
+            </Swiper >
 
-        </div>
+        </div >
 
     );
 

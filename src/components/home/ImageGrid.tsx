@@ -23,13 +23,17 @@ export default function ImageGrid() {
     const ImageCard = ({
         src,
         alt,
+        id,
         description,
     }: {
         src: string;
         alt: string;
+        id: number;
         description: string;
     }) => (
+
         <div className="relative rounded-2xl overflow-hidden shadow-lg group">
+
             {/* Image with zoom effect */}
             <img
                 src={src}
@@ -44,12 +48,13 @@ export default function ImageGrid() {
             {/* Text + Button */}
             <div className="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transform translate-y-5 group-hover:translate-y-0 transition-all duration-500">
                 <p className="text-white text-lg mb-3">{description}</p>
-                <Link to={'/about'}>
+                <Link to={`/products/${id}`}>
                     <button className="px-4 py-2 bg-white text-black rounded-lg font-medium shadow-md hover:bg-gray-200 transition">
                         Learn More
                     </button>
                 </Link>
             </div>
+
         </div>
     );
 
@@ -72,6 +77,7 @@ export default function ImageGrid() {
                 >
                     <ImageCard
                         src="/image-gird-1.jpg"
+                        id={600}
                         alt="Engineer at solar panels"
                         description="Engineer at solar panels"
                     />
@@ -87,6 +93,7 @@ export default function ImageGrid() {
                 >
                     <ImageCard
                         src="/image-gird-2.jpg"
+                        id={800}
                         alt="Mother and child at solar panels"
                         description="Family exploring solar energy"
                     />
@@ -103,6 +110,7 @@ export default function ImageGrid() {
                 >
                     <ImageCard
                         src="/image-gird-3.jpg"
+                        id={1000}
                         alt="Engineers walking at solar farm"
                         description="Engineers walking at solar farm"
                     />
