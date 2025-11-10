@@ -25,7 +25,7 @@ export default function BentoGrid() {
     return (
 
 
-        <div className="w-full px-2 sm:px-10 lg:px-20 py-8 sm:py-5">
+        <div className="w-full px-2 sm:px-10 lg:px-20 py-2 sm:py-5">
 
 
             <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-6">
