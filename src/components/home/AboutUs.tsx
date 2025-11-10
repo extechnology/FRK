@@ -90,7 +90,7 @@ export default function AboutUs() {
 
 
                 {/* Right Side */}
-                <div className="flex flex-col gap-8 h-full">
+                <div className="flex flex-col gap-7 h-full">
 
                     {/* Description */}
                     <motion.p
@@ -99,9 +99,9 @@ export default function AboutUs() {
                         whileInView="visible"
                         viewport={{ once: true }}
                         custom={1}
-                        className="text-gray-600 text-sm sm:text-base max-w-[520px] leading-relaxed"
+                        className="text-gray-600 text-sm sm:text-base max-w-[520px] leading-relaxed text-justify"
                     >
-                        FRK specializes in manufacturing high-quality solar street lights and executing turnkey installation projects. Our solutions combine advanced solar technology, energy efficiency, and durability, ensuring reliable outdoor lighting. We deliver customized solar lighting projects for streets, highways, and communities, supporting sustainability and reducing electricity costs.
+                        FRK Solar Streetlight stands as a symbol of reliability and innovation in solar lighting solutions. As a trusted brand from a trusted name, we are dedicated to delivering high-quality, energy-efficient, and eco-friendly solar street lights that brighten communities and protect the environment. With advanced technology, durable designs, and a strong focus on customer satisfaction, FRK continues to lead the way in sustainable outdoor lighting. Choose FRK where excellence meets trust, and every light shines with purpose
                     </motion.p>
 
 
@@ -152,11 +152,11 @@ export default function AboutUs() {
                         <img
                             src="/hero-about-2.jpg"
                             alt="Easypack factory packaging process"
-                            className="w-full object-cover h-[220px] sm:h-[240px] lg:h-[410px] transform transition-transform duration-500 group-hover:scale-110"
+                            className="w-full object-cover h-[300px] sm:h-[240px] lg:h-[365px] transform transition-transform duration-500 group-hover:scale-110"
                             loading="lazy"
                         />
                         <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    </motion.div>
+                    </motion.div>   
 
                 </div>
 
