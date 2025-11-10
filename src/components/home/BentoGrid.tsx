@@ -129,7 +129,7 @@ export default function BentoGrid() {
 
                     <div className="flex flex-col items-center">
                         <img
-                            src="https://randomuser.me/api/portraits/men/32.jpg"
+                            src="https://static.vecteezy.com/system/resources/thumbnails/049/174/246/small/a-smiling-young-indian-man-with-formal-shirts-outdoors-photo.jpg"
                             alt="Jidan D."
                             loading="lazy"
                             className="w-20 h-20 rounded-full object-cover"
