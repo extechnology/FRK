@@ -39,6 +39,7 @@ export default function ProductView() {
                         key={activeImg}
                         src={product.images[activeImg]}
                         alt={product.title}
+                        loading="lazy"
                         className="w-full rounded-2xl shadow-lg object-cover"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -64,6 +65,7 @@ export default function ProductView() {
                                 <img
                                     src={img}
                                     alt={`thumb-${i}`}
+                                    loading="lazy"
                                     className="w-full h-full object-cover"
                                 />
                             </motion.button>
@@ -181,39 +183,88 @@ export default function ProductView() {
 
 
                     {/* Specifications */}
-                    <TabsContent value="specs" className="mt-6 sm:mt-8">
+                    <TabsContent value="specs" className="mt-6 sm:mt-8 space-y-8">
 
-                        <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
+                        {product?.specifications?.panelDetails && (
+                            <div>
+                                <h3 className="text-xl font-bold text-green-700 mb-4">
+                                    Panel Details
+                                </h3>
+                                <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
+                                    <table className="w-full text-sm sm:text-md">
+                                        <tbody>
+                                            {product.specifications.panelDetails.map((spec, i) => (
+                                                <tr
+                                                    key={i}
+                                                    className={`${i % 2 === 0 ? "bg-white" : "bg-gray-50"} hover:bg-green-50 transition`}
+                                                >
+                                                    <td className="px-3 sm:px-4 py-2 font-medium border-b border-gray-200 w-1/3 text-gray-800">
+                                                        {spec.label}
+                                                    </td>
+                                                    <td className="px-3 sm:px-4 py-2 sm:py-3 border-b border-gray-200 text-gray-600">
+                                                        {spec.value}
+                                                    </td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        )}
 
-                            <table className="w-full text-sm sm:text-md">
+                        {product?.specifications?.batteryDetails && (
+                            <div>
+                                <h3 className="text-xl font-bold text-green-700 mb-4">
+                                    Battery Details
+                                </h3>
+                                <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
+                                    <table className="w-full text-sm sm:text-md">
+                                        <tbody>
+                                            {product.specifications.batteryDetails.map((spec, i) => (
+                                                <tr
+                                                    key={i}
+                                                    className={`${i % 2 === 0 ? "bg-white" : "bg-gray-50"} hover:bg-green-50 transition`}
+                                                >
+                                                    <td className="px-3 sm:px-4 py-2 font-medium border-b border-gray-200 w-1/3 text-gray-800">
+                                                        {spec.label}
+                                                    </td>
+                                                    <td className="px-3 sm:px-4 py-2 sm:py-3 border-b border-gray-200 text-gray-600">
+                                                        {spec.value}
+                                                    </td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        )}
 
-                                <tbody>
-
-                                    {product.specifications.map((spec, i) => (
-
-                                        <tr
-                                            key={i}
-                                            className={`${i % 2 === 0 ? "bg-white" : "bg-gray-50"
-                                                } hover:bg-green-50 transition`}
-                                        >
-
-                                            <td className="px-3 sm:px-4 py-2 font-medium border-b border-gray-200 w-1/3 text-gray-800">
-                                                {spec.label}
-                                            </td>
-
-                                            <td className="px-3 sm:px-4 py-2 sm:py-3 border-b border-gray-200 text-gray-600">
-                                                {spec.value}
-                                            </td>
-
-                                        </tr>
-
-                                    ))}
-
-                                </tbody>
-
-                            </table>
-
-                        </div>
+                        {product?.specifications?.lightingDetails && (
+                            <div>
+                                <h3 className="text-xl font-bold text-green-700 mb-4">
+                                    Lighting & Build Details
+                                </h3>
+                                <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
+                                    <table className="w-full text-sm sm:text-md">
+                                        <tbody>
+                                            {product.specifications.lightingDetails.map((spec, i) => (
+                                                <tr
+                                                    key={i}
+                                                    className={`${i % 2 === 0 ? "bg-white" : "bg-gray-50"} hover:bg-green-50 transition`}
+                                                >
+                                                    <td className="px-3 sm:px-4 py-2 font-medium border-b border-gray-200 w-1/3 text-gray-800">
+                                                        {spec.label}
+                                                    </td>
+                                                    <td className="px-3 sm:px-4 py-2 sm:py-3 border-b border-gray-200 text-gray-600">
+                                                        {spec.value}
+                                                    </td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        )}
 
                     </TabsContent>
 

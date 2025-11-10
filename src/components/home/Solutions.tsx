@@ -45,9 +45,8 @@ export default function Solutions() {
 
                 <div>
                     <h2 className="text-3xl md:text-4xl font-bold mb-2">Where Technology Meets the Power of the Sun</h2>
-                    <p className="text-gray-600 max-w-xl text-justify">
-                        Explore the latest in solar technology and solutions that can transform your energy
-                        usage. Discover how solar power can reduce costs and create a sustainable future.
+                    <p className="text-gray-600 max-w-5xl text-justify">
+                        At FRK our vision reflects an unwavering commitment to innovation sustainability and progress. We believe that sunlight can transform everyday life. Our Lighting Solutions are reliable, efficient and eco-friendly by harnessing clean solar energy. They illuminate streets enhance community safety and bring people together lighting the path toward a brighter
                     </p>
                 </div>
 
@@ -70,7 +69,7 @@ export default function Solutions() {
                         viewport={{ once: true }}
                         className="bg-white overflow-hidden flex flex-col"
                     >
-                        <img src={card.image} alt={card.title} className="w-full h-72 object-cover rounded-2xl" />
+                        <img src={card.image} alt={card.title} loading="lazy" className="w-full h-72 object-cover rounded-2xl" />
                         <div className="p-4 flex flex-col gap-2">
                             <h3 className="text-lg font-semibold">{card.title}</h3>
                             <p className="text-gray-600 text-sm">{card.description}</p>

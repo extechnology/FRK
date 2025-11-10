@@ -34,9 +34,9 @@ export default function About() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         viewport={{ once: true }}
-                        className="text-2xl md:text-4xl lg:text-5xl font-semibold text-gray-900 leading-snug"
+                        className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-snug"
                     >
-                        Experience energy independence with  <br className="hidden md:block" /> advanced solar lights built for performance and long life
+                        Experience Energy Independence with Durable, <br className="hidden md:block" /> High-performance <br className="sm:hidden" />  Solar Lights
                     </motion.h2>
 
                     {/* Animated Image */}
@@ -61,7 +61,7 @@ export default function About() {
 
 
                 {/* Our Mission */}
-                <div className="pt-16 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div className="pt-6 sm:pt-16 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
                     {/* Left Content */}
                     <motion.div
