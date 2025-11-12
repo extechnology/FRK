@@ -21,7 +21,7 @@ export interface ProductProps {
 // 🔥 Full Product Data
 export const productData: ProductProps[] = [
     {
-        id: 600,
+        id: 1,
         title: "SOLAR STREETLIGHT 600W",
         subtitle: "Light control + Remote control",
         shortDescription: "Energy-efficient solar street lights with durable LiFePO₄ batteries, advanced tech, and easy installation for reliable, sustainable public lighting.",
@@ -85,7 +85,7 @@ export const productData: ProductProps[] = [
         ],
     },
     {
-        id: 800,
+        id: 2,
         title: "SOLAR STREETLIGHT 800W",
         subtitle: "Light control + Remote control",
         shortDescription: "Energy-efficient solar street lights with durable LiFePO₄ batteries, advanced tech, and easy installation for reliable, sustainable public lighting.",
@@ -152,7 +152,7 @@ export const productData: ProductProps[] = [
         ],
     },
     {
-        id: 1000,
+        id: 3,
         title: "SOLAR STREETLIGHT 1000W",
         subtitle: "Light control + Remote control",
         shortDescription: "Energy-efficient solar street lights with durable LiFePO₄ batteries, advanced tech, and easy installation for reliable, sustainable public lighting.",
@@ -219,11 +219,11 @@ export const productData: ProductProps[] = [
         ],
     },
     {
-        id: 1200,
-        title: "SOLAR STREETLIGHT 1200W",
+        id: 4,
+        title: "SOLAR HIGH MAST 1000W",
         subtitle: "Light control + Remote control",
-        shortDescription: "Energy-efficient solar street lights with durable LiFePO₄ batteries, advanced tech, and easy installation for reliable, sustainable public lighting.",
-        description: "Experience Unmatched Brightness & Performance with the 1200W Solar Imax Light.Engineered for powerful illumination and wide-beam coverage, the 1200W Solar Flood Light features advanced solar panel technology and a robust LiFePO₄ battery for ultra-bright output, rapid charging, and consistent performance even in low sunlight — delivering high-intensity, energy-efficient lighting ideal for large outdoor spaces and security applications.",
+        shortDescription: "FRK Solar 1000W High Mast Light delivers powerful, eco-friendly illumination with advanced solar technology and durable design. Built for reliability and efficiency, it ensures maximum brightness, long battery life, and superior performance in all weather conditions—perfect for highways, stadiums, industrial zones, and public spaces requiring consistent, high-intensity lighting.",
+        description: "FRK Solar 1000W High Mast Light delivers powerful, eco-friendly illumination with advanced solar technology and durable design. Built for reliability and efficiency, it ensures maximum brightness, long battery life, and superior performance in all weather conditions—perfect for highways, stadiums, industrial zones, and public spaces requiring consistent, high-intensity lighting.",
         images: [
             "/Solar-Street-Lights-for-Outdoor-1200W-1-product.jpg",
             "/Solar-Street-Lights-for-Outdoor-1200W-3-product.jpg",
@@ -231,9 +231,47 @@ export const productData: ProductProps[] = [
             "/Solar-Street-Lights-for-Outdoor-1200W-2-product.jpg",
         ],
         specifications: {
+            panelDetails: [
+                { label: "Solar Panel Size", value: "980 × 580 × 25 mm" },
+                { label: "Rated Maximum Power [Pmax]", value: "100 W" },
+                { label: "Open Circuit Voltage [Voc]", value: "22.64 V" },
+                { label: "Rated Voltage [Vmax]", value: "19.83 V" },
+                { label: "Short Circuit Current [Isc]", value: "5.35 A" },
+                { label: "Rated Current [Imax]", value: "5.06 A" },
+                { label: "NOCT", value: "45°C (Normal Operating Cell Temperature)" },
+            ],
 
+            batteryDetails: [
+                { label: "Battery Name", value: "Lithium Iron Phosphate" },
+                { label: "Battery Type", value: "Built-in LiFePO₄ Battery" },
+                { label: "Battery Protections", value: "Overcharge, Deep Discharge, Short Circuit, Over-Current, Over-Voltage, Under-voltage, Open Circuit" },
+                { label: "Battery Lifespan", value: "> 10 Years" },
+                { label: "Battery Charging Time", value: "1 Day under normal sunlight" },
+                { label: "Rainy Days Backup", value: "2 Days" },
+                { label: "Battery Capacity", value: "10000 mAh (Ensures autonomy in cloudy days)" },
+                { label: "Charging Time", value: "5–6 Hours" },
+                { label: "Ingress Protection", value: "IP66 or above (better than IP65)" },
+            ],
+
+            lightingDetails: [
+                { label: "Housing", value: "High Pressure Aluminium Die-Cast" },
+                { label: "Lamp Material", value: "Die Casting Aluminium + PC Lens" },
+                { label: "PIR Sensor", value: "Optional (energy saving feature)" },
+                { label: "Features", value: "Flicker-free, Dimming Option" },
+                { label: "Lamp Output", value: "4884.84 lm" },
+                { label: "Colour Temperature", value: "6500K" },
+                { label: "Light Size", value: "420 × 330 × 75 mm" },
+                { label: "Number of LEDs", value: "144" },
+                { label: "Light Working Time", value: "2 Days Backup (First 6 Hours → 100% Brightness / After 6 Hours → 80% Brightness)" },
+                { label: "Driver", value: "Inbuilt DC-DC" },
+                { label: "Beam Angle", value: "120° (wider coverage vs. 100°)" },
+                { label: "Waterproof Rating", value: "IP66" },
+                { label: "Working Mode", value: "Light Control + Remote Control" },
+                { label: "Installation Height", value: "5–6 m (Customized Option Available)" },
+                { label: "Standards Compliance", value: "IS : 15885 (Part 2 / Sec 13) / IS : 16104 / IEC 62384 (latest)" },
+            ],
         },
-        warranty: "Solar Street Lights 1200W come with a reliable 3-years Service warranty, assuring long-term performance, durability, and peace of mind. This warranty reflects our commitment to quality, customer satisfaction, and trust in our advanced solar lighting technology.",
+        warranty: "Solar Street HIGH MAST 1000W comes with a reliable 3-year Service warranty, assuring long-term performance, durability, and peace of mind. This warranty reflects our commitment to quality, customer satisfaction, and trust in our advanced solar lighting technology.",
         notes: [
             "Built-in LiFePO₄ battery with a lifespan of over 10 years.",
             "Uses Mono PERC HPT solar panels for fast charging and high efficiency.",
@@ -244,7 +282,7 @@ export const productData: ProductProps[] = [
             "Made with high-quality aluminium for strength and longevity.",
             "Offers 1–2 days of lighting backup during rainy or cloudy weather.",
             "Designed for mounting heights between 5–8 meters.",
-            "Available in 600W, 800W, 1000W, and 1200W models.",
+            "Available in 600W, 800W, 1000W, HIGH MAST (1000W)  etc."
         ],
     },
 ]

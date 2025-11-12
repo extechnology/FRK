@@ -77,7 +77,7 @@ export default function ImageGrid() {
                 >
                     <ImageCard
                         src="/image-gird-1.jpg"
-                        id={1200}
+                        id={4}
                         alt="Engineer at solar panels"
                         description="Engineer at solar panels"
                     />
@@ -93,7 +93,7 @@ export default function ImageGrid() {
                 >
                     <ImageCard
                         src="/image-gird-2.jpg"
-                        id={800}
+                        id={2}
                         alt="Mother and child at solar panels"
                         description="Family exploring solar energy"
                     />
@@ -110,7 +110,7 @@ export default function ImageGrid() {
                 >
                     <ImageCard
                         src="/image-gird-3.jpg"
-                        id={1000}
+                        id={3}
                         alt="Engineers walking at solar farm"
                         description="Engineers walking at solar farm"
                     />

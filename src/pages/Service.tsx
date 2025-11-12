@@ -40,8 +40,8 @@ export default function Service() {
             img: "/Integration-of-Smart-Controls-service.jpg",
         },
         {
-            title: "Maintenance & Troubleshooting Services",
-            desc: "Comprehensive maintenance and troubleshooting services for solar street lights, ensuring long-term performance and reliability. Their skilled technicians conduct routine inspections, cleaning, battery checks, and repairs, promptly addressing any issues. By maintaining optimal system functionality, FRK minimizes downtime, extends equipment lifespan, and guarantees consistent, energy-efficient, and safe illumination for streets, parks, and public spaces, providing clients with peace of mind and sustainable lighting solutions",
+            title: "Quality Assurance & On Time Delivery",
+            desc: "We stand out for their exceptional quality assurance and reliable on-time delivery. Each light is manufactured using premium-grade components, ensuring superior brightness, energy efficiency, and long-lasting performance. FRK follows strict quality control measures at every stage of production, from material selection to final testing, guaranteeing durability and weather resistance. The company prioritizes customer satisfaction through timely project completion and dependable logistics, ensuring all orders are delivered as promised. With FRK, clients receive not only eco-friendly and efficient solar lighting solutions but also a trusted commitment to excellence, reliability, and punctual delivery—every time.",
             img: "/Maintenance-Troubleshooting-Services.jpg",
         },
         {
@@ -150,7 +150,7 @@ export default function Service() {
                                         initial={{ height: 0, opacity: 0 }}
                                         animate={{ height: "auto", opacity: 1 }}
                                         exit={{ height: 0, opacity: 0 }}
-                                        className="text-sm text-gray-200 overflow-hidden"
+                                        className="text-sm text-gray-200 overflow-hidden text-justify"
                                     >
                                         {expandedIndex === i ? service.desc : getShortDesc(service.desc)}
                                     </motion.p>
