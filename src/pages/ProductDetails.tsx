@@ -89,7 +89,7 @@ export default function ProductView() {
                         {product.subtitle}
                     </p>
 
-                    <p className="text-sm sm:text-base text-gray-700">
+                    <p className="text-sm sm:text-base text-gray-700 text-justify">
                         {product.description}
                     </p>
 

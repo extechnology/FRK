@@ -77,7 +77,7 @@ export default function ImageGrid() {
                 >
                     <ImageCard
                         src="/image-gird-1.jpg"
-                        id={600}
+                        id={1200}
                         alt="Engineer at solar panels"
                         description="Engineer at solar panels"
                     />

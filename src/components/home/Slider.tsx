@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const slides = [
     {
         image: "/hero-banner.jpg",
-        title: "Reliable Solar Lights, Day After Day.",
+        title: "Reliable Solar Lights Day After Day.",
         desc: "Brighten every corner with eco-friendly solar lights,designed for durability, reliability, and sustainability",
     },
 ];

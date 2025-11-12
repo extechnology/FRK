@@ -66,7 +66,8 @@ export default function Projects() {
                         </h2>
 
                         <p className="text-gray-600 text-base md:text-lg mt-2">
-                            We offer five essential solar solutions tailored to your needs
+                            Light up the Night, Solve Every Power Problem with Solar Streetlights, <br />
+                            We’ve successfully installed our Solar Streetlights Across Various locations.
                         </p>
 
                     </div>
@@ -83,7 +84,7 @@ export default function Projects() {
 
                         <div className="mt-4 sm:mt-0">
                             <p className="text-3xl font-bold text-black">85,000+</p>
-                            <p className="text-sm text-gray-500">Installs across the Europe</p>
+                            <p className="text-sm text-gray-500">Installs across the India</p>
                         </div>
 
                     </div>
