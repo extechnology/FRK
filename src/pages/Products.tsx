@@ -63,7 +63,7 @@ export default function Products() {
 
 
 
-const ProductCard: React.FC<ProductProps> = ({ id, title, subtitle, shortDescription, images, }) => {
+const ProductCard: React.FC<ProductProps> = ({ id, title, subtitle, description, images, }) => {
 
 
     const navigate = useNavigate();
@@ -104,7 +104,10 @@ const ProductCard: React.FC<ProductProps> = ({ id, title, subtitle, shortDescrip
             {/* Content */}
             <div className="p-6 flex flex-col flex-grow">
 
-                <p className="text-gray-600 text-sm flex-grow">{shortDescription}</p>
+                <p className="text-gray-600 text-sm flex-grow text-justify">
+                    {description.split(' ').slice(0, 20).join(' ') + (description.split(' ').length > 20 ? '...' : '')}
+                </p>
+
 
                 {/* CTA */}
                 <div className="mt-6 flex gap-3">

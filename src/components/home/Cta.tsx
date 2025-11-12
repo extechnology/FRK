@@ -33,8 +33,8 @@ export default function Cta() {
                         Contribute and Welcome Green Revolution
                     </h2>
 
-                    <p className="mt-4 text-sm sm:text-base md:text-lg text-white/90 leading-relaxed">
-                        proudly contributes to the green revolution by providing sustainable solar lighting solutions, reducing carbon footprint, saving energy, and creating a brighter, eco-friendly future for communities and generations to come.
+                    <p className="mt-4 text-sm sm:text-base md:text-lg text-white/90 leading-relaxed text-center">
+                        FRK solar streetlights proudly leads the movement toward a sustainable future by delivering advanced solar lighting solutions that redefine energy efficiency. Through innovation and clean technology, we reduce carbon footprints, conserve energy, and illuminate pathways toward a brighter, eco-conscious world for communities today and generations tomorrow.
                     </p>
 
                     <Link to="/products">

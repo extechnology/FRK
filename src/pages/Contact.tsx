@@ -125,7 +125,7 @@ export default function Contact() {
                                     <div>
                                         <p className="font-medium">Address</p>
                                         <p className="text-sm">Kottumuchi, Kodakkad
-                                            Malappuram, Kerala, 673635</p>
+                                            Malappuram, Kerala, 676319</p>
                                     </div>
                                 </div>
 
@@ -133,8 +133,12 @@ export default function Contact() {
                                     <Phone className="w-6 h-6 text-blue-600" />
                                     <div>
                                         <p className="font-medium">Phone</p>
-                                        <a href="tel:+917025888461" target="_blank">
-                                            +91 70258 88461
+                                        <a href="tel:+917025888461" className="hover:text-blue-600" target="_blank">
+                                            +91 7025888461 ,
+                                        </a>
+
+                                         <a href="tel:+917025888462" className="hover:text-blue-600 sm:ml-2" target="_blank">
+                                            +91 7025888462
                                         </a>
                                     </div>
                                 </div>

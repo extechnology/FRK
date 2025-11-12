@@ -75,7 +75,7 @@ export default function About() {
                             WELCOME TO FRK SOLAR STREET LIGHTS
                         </h2>
 
-                        <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                        <p className="text-gray-600 text-sm md:text-base leading-relaxed text-justify">
                             Partner for Reliable Solar Lighting Solutions FRK specializes in distributing high-quality, environment-friendly, cost-effective solar street lighting. Its solar-powered street lights will capture power directly from the sun. They will give you highly reliable lighting that does not require one to fall back on traditional power sources. However well you want to light your streets, pathways, or public spaces, we offer sustainable solutions and a brighter future for more years.
                         </p>
                     </motion.div>
@@ -127,10 +127,10 @@ export default function About() {
                     >
 
                         <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 leading-snug">
-                            Trust built by our Quality and Performance
+                            Trust Built By Our Quality And Performance
                         </h2>
 
-                        <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                        <p className="text-gray-600 text-sm md:text-base leading-relaxed text-justify">
                             Your Trusted Partner for Reliable Solar Lighting Solutions Our commitment to state-of-the-art solar street lighting solutions spans a decade of innovation. From our start with a goal of providing increased sustainability and safety for the public by utilizing renewable energy, we have consistently worked to design and develop premium solar street lights that light up streets we have consistently worked to design and develop premium solar street lights that light up streets, empower a community &  engage in environmental stewardship.
                         </p>
                     </motion.div>
@@ -151,10 +151,10 @@ export default function About() {
                         className="space-y-3"
                     >
                         <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 leading-snug">
-                            Well Organized and Committed
+                            Well Organized And Committed
                         </h2>
 
-                        <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                        <p className="text-gray-600 text-sm md:text-base leading-relaxed text-justify">
                             Management and employees share a united vision to lead the Green Solar Revolution. Every member of the team is committed to delivering innovative, sustainable, and high-quality solar lighting solutions that reduce environmental impact and promote renewable energy adoption. Through continuous training, research, and collaboration, FRK ensures that its workforce stays ahead of industry trends, maintaining excellence in service and technology. This collective dedication not only drives the company’s growth but also contributes to creating safer, well-lit communities powered by clean energy. FRK believes that true progress comes from teamwork, responsibility, and a shared passion for a greener future
                         </p>
                     </motion.div>
