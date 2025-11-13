@@ -40,23 +40,22 @@ export default function Solutions() {
                 initial={{ opacity: 0, y: -30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="flex flex-col  gap-6 mb-10"
+                className="flex flex-col justify-center items-center gap-6 mb-10"
             >
 
                 <div>
-                    <h2 className="text-3xl md:text-4xl font-bold mb-2">Where Technology Meets the Power of the Sun</h2>
-                    <p className="text-gray-600 max-w-5xl text-justify">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center">Where Technology Meets the Power of the Sun</h2>
+                    <p className="text-gray-600 max-w-5xl text-center">
                         At FRK our vision reflects an unwavering commitment to innovation sustainability and progress. We believe that sunlight can transform everyday life. Our Lighting Solutions are reliable, efficient and eco-friendly by harnessing clean solar energy. They illuminate streets enhance community safety and bring people together lighting the path toward a brighter
                     </p>
                 </div>
 
-                <div className="flex justify-center">
-                    <Link to="/projects">
-                        <Button className="bg-black text-white rounded-full px-6 py-6 text-sm hover:bg-gray-900 hover:cursor-pointer hover:scale-105 transition-transform">
-                            Explore Our Projects →
-                        </Button>
-                    </Link>
-                </div>
+
+                <Link to="/projects">
+                    <Button className="bg-black text-white rounded-full px-6 py-6 text-sm hover:bg-gray-900 hover:cursor-pointer hover:scale-105 transition-transform">
+                        Explore Our Projects →
+                    </Button>
+                </Link>
 
             </motion.div>
 
