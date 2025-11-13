@@ -7,7 +7,40 @@ import { Link } from "react-router-dom";
 
 
 
+
 export default function About() {
+
+
+
+
+    // About Sections
+    const aboutSections: { title: string; description: string; image: string }[] = [
+        {
+            title: "WELCOME TO FRK SOLAR STREET LIGHTS",
+            description:
+                "Partner for Reliable Solar Lighting Solutions FRK specializes in distributing high-quality, environment-friendly, cost-effective solar street lighting. Its solar-powered street lights will capture power directly from the sun. They will give you highly reliable lighting that does not require one to fall back on traditional power sources. However well you want to light your streets, pathways, or public spaces, we offer sustainable solutions and a brighter future for more years.",
+            image: "/WELCOME-TO -FRK-about-1.jpg",
+        },
+        {
+            title: "Trust Built By Our Quality And Performance",
+            description:
+                "Your Trusted Partner for Reliable Solar Lighting Solutions Our commitment to state-of-the-art solar street lighting solutions spans a decade of innovation. From our start with a goal of providing increased sustainability and safety for the public by utilizing renewable energy, we have consistently worked to design and develop premium solar street lights that light up streets we have consistently worked to design and develop premium solar street lights that light up streets, empower a community & engage in environmental stewardship.",
+            image: "/Trust-built-by-about-2.jpg",
+        },
+        {
+            title: "Well Organized And Committed",
+            description:
+                "Management and employees share a united vision to lead the Green Solar Revolution. Every member of the team is committed to delivering innovative, sustainable, and high-quality solar lighting solutions that reduce environmental impact and promote renewable energy adoption. Through continuous training, research, and collaboration, FRK ensures that its workforce stays ahead of industry trends, maintaining excellence in service and technology. This collective dedication not only drives the company’s growth but also contributes to creating safer, well-lit communities powered by clean energy. FRK believes that true progress comes from teamwork, responsibility, and a shared passion for a greener future.",
+            image: "/Well- Organized-about-3.jpg",
+        },
+        {
+            title: "Quality Assurance",
+            description:
+                "FRK Lighting Solution is proud to be an ISO 9001:2015 certified company, demonstrating our strong dedication to maintaining the highest standards of quality and reliability. This certification reflects our continuous commitment to excellence in every aspect of our operations — from the design and development to the manufacturing and professional installation of advanced solar streetlight solutions. Through innovation and precision, we ensure energy-efficient, sustainable, and durable lighting systems that meet global quality benchmarks and customer satisfaction.",
+            image: "/ISO-about-4.jpg",
+        },
+    ];
+
 
 
     return (
@@ -19,16 +52,17 @@ export default function About() {
             <HeroBanner
                 title="About Us"
                 desc="Brighten every corner with eco-friendly solar lights,designed for durability, reliability, and sustainability"
-                image="/About-us-Banner.jpg"
+                image="/About-banner.jpg"
             />
 
 
             <div className="px-2 sm:px-10 lg:px-20 pb-8 sm:pb-10">
 
 
+
+                {/* Animated Heading */}
                 <div className="mx-auto text-center">
 
-                    {/* Animated Heading */}
                     <motion.h2
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -36,10 +70,9 @@ export default function About() {
                         viewport={{ once: true }}
                         className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-snug"
                     >
-                        Experience Energy Independence with Durable, <br className="hidden md:block" /> High-performance <br className="sm:hidden" />  Solar Lights
+                        Experience Energy Independence With Durable, <br className="hidden md:block" /> High-performance <br className="sm:hidden" />  Solar Lights
                     </motion.h2>
 
-                    {/* Animated Image */}
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -48,7 +81,7 @@ export default function About() {
                         className="mt-8 md:mt-12"
                     >
                         <img
-                            src="/about-us-hero.jpg"
+                            src="/about-hero.jpg"
                             loading="lazy"
                             alt="Team collaboration"
                             className="w-full rounded-lg md:rounded-xl lg:rounded-2xl shadow-md"
@@ -60,121 +93,57 @@ export default function About() {
 
 
 
-                {/* Our Mission */}
-                <div className="pt-6 sm:pt-16 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-                    {/* Left Content */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                        viewport={{ once: true }}
-                        className="space-y-3"
-                    >
-                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 leading-snug">
-                            WELCOME TO FRK SOLAR STREET LIGHTS
-                        </h2>
+                {/* About Sections */}
+                <div className="space-y-4 sm:space-y-8">
+                   
+                    {aboutSections.map((section, index) => {
 
-                        <p className="text-gray-600 text-sm md:text-base leading-relaxed text-justify">
-                            Partner for Reliable Solar Lighting Solutions FRK specializes in distributing high-quality, environment-friendly, cost-effective solar street lighting. Its solar-powered street lights will capture power directly from the sun. They will give you highly reliable lighting that does not require one to fall back on traditional power sources. However well you want to light your streets, pathways, or public spaces, we offer sustainable solutions and a brighter future for more years.
-                        </p>
-                    </motion.div>
+                        const isEven = index % 2 === 0;
 
-                    {/* Right Image */}
-                    <motion.div
-                        initial={{ opacity: 0, x: 50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
-                        viewport={{ once: true }}
-                        className="flex justify-center"
-                    >
-                        <img
-                            src="/about-us-1.jpg"
-                            alt="Growth Chart"
-                            loading="lazy"
-                            className="w-full h-[50vh] rounded-xl shadow-md"
-                        />
-                    </motion.div>
+                        return (
+                            <div
+                                key={index}
+                                className="pt-6 sm:pt-16 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-24 items-center"
+                            >
+                                {/* Left Content (or Right, depending on index) */}
+                                <motion.div
+                                    initial={{ opacity: 0, x: isEven ? -50 : 50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }}
+                                    viewport={{ once: true }}
+                                    // Order logic here
+                                    className={`space-y-3 ${!isEven ? "md:order-2" : "md:order-1"}`}
+                                >
+                                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
+                                        {section.title}
+                                    </h2>
+                                    <p className="text-gray-600 text-sm md:text-base leading-relaxed text-justify">
+                                        {section.description}
+                                    </p>
+                                </motion.div>
+
+                                {/* Right Image (or Left, depending on index) */}
+                                <motion.div
+                                    initial={{ opacity: 0, x: isEven ? 50 : -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
+                                    viewport={{ once: true }}
+                                    // Reverse order on odd indexes
+                                    className={`flex justify-center ${!isEven ? "md:order-1" : "md:order-2"}`}
+                                >
+                                    <img
+                                        src={section.image}
+                                        alt={section.title}
+                                        loading="lazy"
+                                        className="w-full rounded-xl shadow-md"
+                                    />
+                                </motion.div>
+                            </div>
+                        );
+                    })}
                 </div>
 
-
-
-
-                {/* Our Vision */}
-                <div className="pt-8 sm:pt-16 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-48 items-center">
-
-                    <motion.div
-                        initial={{ opacity: 0, x: 50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
-                        viewport={{ once: true }}
-                        className="flex justify-center"
-                    >
-                        <img
-                            src="/about-us-2.jpg"
-                            alt="Growth Chart"
-                            loading="lazy"
-                            className="w-full h-[50vh] rounded-xl shadow-md"
-                        />
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, x: -50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                        viewport={{ once: true }}
-                        className="space-y-3"
-                    >
-
-                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 leading-snug">
-                            Trust Built By Our Quality And Performance
-                        </h2>
-
-                        <p className="text-gray-600 text-sm md:text-base leading-relaxed text-justify">
-                            Your Trusted Partner for Reliable Solar Lighting Solutions Our commitment to state-of-the-art solar street lighting solutions spans a decade of innovation. From our start with a goal of providing increased sustainability and safety for the public by utilizing renewable energy, we have consistently worked to design and develop premium solar street lights that light up streets we have consistently worked to design and develop premium solar street lights that light up streets, empower a community &  engage in environmental stewardship.
-                        </p>
-                    </motion.div>
-
-                </div>
-
-
-
-                {/* Our Mission */}
-                <div className="pt-5 sm:pt-16 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
-                    {/* Left Content */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                        viewport={{ once: true }}
-                        className="space-y-3"
-                    >
-                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 leading-snug">
-                            Well Organized And Committed
-                        </h2>
-
-                        <p className="text-gray-600 text-sm md:text-base leading-relaxed text-justify">
-                            Management and employees share a united vision to lead the Green Solar Revolution. Every member of the team is committed to delivering innovative, sustainable, and high-quality solar lighting solutions that reduce environmental impact and promote renewable energy adoption. Through continuous training, research, and collaboration, FRK ensures that its workforce stays ahead of industry trends, maintaining excellence in service and technology. This collective dedication not only drives the company’s growth but also contributes to creating safer, well-lit communities powered by clean energy. FRK believes that true progress comes from teamwork, responsibility, and a shared passion for a greener future
-                        </p>
-                    </motion.div>
-
-                    {/* Right Image */}
-                    <motion.div
-                        initial={{ opacity: 0, x: 50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
-                        viewport={{ once: true }}
-                        className="flex justify-center"
-                    >
-                        <img
-                            src="/about-us-3.jpg"
-                            loading="lazy"
-                            alt="Growth Chart"
-                            className="w-full h-[50vh] rounded-xl shadow-md"
-                        />
-                    </motion.div>
-                </div>
 
 
 

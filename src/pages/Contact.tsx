@@ -26,7 +26,7 @@ export default function Contact() {
             <HeroBanner
                 title="Contact Us"
                 desc="We're here to help you with any questions or concerns you may have. Reach out to us and let us know how we can assist you."
-                image="/contactus-banner.jpg"
+                image="/contact-banner.jpg"
             />
 
 

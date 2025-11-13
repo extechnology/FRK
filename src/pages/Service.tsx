@@ -27,7 +27,7 @@ export default function Service() {
         {
             title: "Professional Installation & Commissioning",
             desc: "offers professional installation and commissioning of solar street lighting systems, ensuring precise setup and seamless operation. Their expert team handles pole erection, light fixture mounting, wiring, and system integration with strict safety standards. Post-installation, each system is tested for optimal performance, reliability, and energy efficiency, providing clients with a fully operational, low-maintenance, and sustainable solar lighting solution that illuminates streets, parks, and public spaces effectively",
-            img: "/Professional-Installation-Commissioning-service.jpg",
+            img: "/Professional-Installation-and-Commission-services.jpg",
         },
         {
             title: "Project Management & Execution",
@@ -37,22 +37,22 @@ export default function Service() {
         {
             title: "Integration of Smart Controls",
             desc: "Integrates smart control systems into solar street lights to enhance efficiency and convenience. Features like timers, motion sensors, dimming controls, and remote monitoring optimize energy usage, extend battery life, and ensure consistent illumination. These intelligent systems provide automated, adaptive lighting solutions that reduce operational costs, improve safety, and deliver reliable, eco-friendly street lighting tailored to the specific needs of communities and commercial spaces",
-            img: "/Integration-of-Smart-Controls-service.jpg",
+            img: "/Integration-of-smart-control-services.jpg",
         },
         {
             title: "Quality Assurance & On Time Delivery",
             desc: "We stand out for their exceptional quality assurance and reliable on-time delivery. Each light is manufactured using premium-grade components, ensuring superior brightness, energy efficiency, and long-lasting performance. FRK follows strict quality control measures at every stage of production, from material selection to final testing, guaranteeing durability and weather resistance. The company prioritizes customer satisfaction through timely project completion and dependable logistics, ensuring all orders are delivered as promised. With FRK, clients receive not only eco-friendly and efficient solar lighting solutions but also a trusted commitment to excellence, reliability, and punctual delivery—every time.",
-            img: "/Maintenance-Troubleshooting-Services.jpg",
+            img: "/Quality-Assurance-Time-Delivery-service.jpg",
         },
         {
             title: "After-Sales Support & Warranty Services",
             desc: "Provides reliable after-sales support and warranty services for solar street lights, ensuring customer satisfaction and system longevity. Their dedicated team offers technical assistance, troubleshooting, and prompt resolution of issues, while honoring warranty commitments. This comprehensive support guarantees uninterrupted, efficient, and sustainable lighting, giving clients peace of mind and confidence in their investment, while reinforcing FRK’s commitment to quality, reliability, and eco-friendly solar solutions for communities and commercial projects",
-            img: "/After-Sales-Support-Warranty-Services.jpg",
+            img: "/After-sales-support-service.jpg",
         },
         {
             title: "Sustainability & Energy Consulting",
             desc: "offers expert sustainability and energy consulting for solar street lighting projects, helping clients optimize energy usage, reduce carbon footprint, and achieve cost savings. Their team provides guidance on renewable energy integration, efficient system design, and eco-friendly practices. By combining technical expertise with sustainable solutions, FRK ensures reliable, energy-efficient, and environmentally responsible lighting that supports the Green Revolution while delivering long-term benefits to communities, businesses, and public spaces",
-            img: "/Sustainability-Energy-Consulting-service.jpg",
+            img: "/Sustanability-energy-consolting-services.jpg",
         },
     ];
 
