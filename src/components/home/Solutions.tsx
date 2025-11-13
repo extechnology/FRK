@@ -14,17 +14,17 @@ export default function Solutions() {
         {
             title: "Quality Street Lighting",
             description: "Delivers Bright, Durable, Energy-Efficient Illumination With Advanced Solar Technology, Ensuring Safety, Reliability, And Sustainable Outdoor Lighting For Every Environment.",
-            image: "/tech-meets-1.jpg",
+            image: "/Quality-Street-Lighting-tech-meets.jpg",
         },
         {
             title: "Professional Fitting and Installation",
             description: "Offers Professional Fitting And Installation With Expert Precision, Ensuring Seamless Setup, Reliable Performance, And Long-Lasting Efficiency For All Solar Lighting Projects.",
-            image: "/tech-meets-2.jpg",
+            image: "/Professional-Fitting-Installation-tech-meets.jpg",
         },
         {
             title: "After-Sales Service",
             description: "Provides Prompt, Reliable After-Sales Service With Expert Support, Ensuring Optimal Performance, Quick Issue Resolution, And Complete Customer Satisfaction For Every Installation.",
-            image: "/tech-meets-3.jpg",
+            image: "/After-Sales-tech-meets.jpg",
         },
     ];
 

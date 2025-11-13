@@ -59,16 +59,11 @@ export default function Projects() {
                 {/* Header Section */}
                 <div className="block sm:flex sm:justify-between mx-auto text-center sm:text-left mb-5">
 
-                    <div>
+                    <div className="mt-6">
 
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                            All Your Energy <br /> Needs, Solved Here!
+                            Lighting The Way Forward
                         </h2>
-
-                        <p className="text-gray-600 text-base md:text-lg mt-2">
-                            Light up the Night, Solve Every Power Problem with Solar Streetlights, <br />
-                            We’ve successfully installed our Solar Streetlights Across Various locations.
-                        </p>
 
                     </div>
 

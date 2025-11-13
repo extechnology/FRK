@@ -27,10 +27,10 @@ export const productData: ProductProps[] = [
         shortDescription: "Energy-efficient solar street lights with durable LiFePO₄ batteries, advanced tech, and easy installation for reliable, sustainable public lighting.",
         description: "Experience Powerful & Sustainable Outdoor Illumination with the 600W Solar Street Light.Designed for Performance and Efficiency, Equipped with a high-capacity LiFePO₄ battery and advanced Solar Panel Technology, it ensures Long -lasting Brightness quick charging & Reliable Operation even in low Sunlight Conditions.",
         images: [
-            "/Solar-Street-Lights-for-Outdoo-600W-1-product.jpg",
-            "/Solar-Street-Lights-for-Outdoo-600W-2-product.jpg",
-            "/Solar-Street-Lights-for-Outdoo-600W-3-product.jpg",
-            "/Solar-Street-Lights-for-Outdoo-600W-4-product.jpg"
+            "/Solar-Street-Lights-600W-1-product.jpg",
+            "/Solar-Street-Lights-600W-2-product.jpg",
+            "/Solar-Street-Lights-600W-3-product.jpg",
+            "/Solar-Street-Lights-600W-4-product.jpg"
         ],
         specifications: {
             panelDetails: [
@@ -91,10 +91,10 @@ export const productData: ProductProps[] = [
         shortDescription: "Energy-efficient solar street lights with durable LiFePO₄ batteries, advanced tech, and easy installation for reliable, sustainable public lighting.",
         description: "Experience Superior & Sustainable Outdoor Illumination with the 800W Solar Street Light Built for maximum brightness and extended coverage, the 800W Solar Street Light combines high-efficiency solar panels with a powerful LiFePO₄ battery, delivering enhanced performance, faster charging, and brilliant illumination even in low sunlight conditions — ensuring greater reliability and energy independence for every environment.",
         images: [
-            "/Solar-Street-Lights-for-Outdoor-800W-1-product.jpg",
-            "/Solar-Street-Lights-for-Outdoor-800W-2-product.jpg",
-            "/Solar-Street-Lights-for-Outdoor-800W-3-product.jpg",
-            "/Solar-Street-Lights-for-Outdoor-800W-4-product.jpg",
+            "/Solar-Street-Lights-800W-1-product.jpg",
+            "/Solar-Street-Lights-800W-2-product.jpg",
+            "/Solar-Street-Lights-800W-3-product.jpg",
+            "/Solar-Street-Lights-800W-4-product.jpg",
         ],
         specifications: {
 
@@ -158,10 +158,10 @@ export const productData: ProductProps[] = [
         shortDescription: "Energy-efficient solar street lights with durable LiFePO₄ batteries, advanced tech, and easy installation for reliable, sustainable public lighting.",
         description: "Experience Ultimate Power & Efficiency with the 1000W Solar Street Light Designed for  maximum illumination and wide-area coverage, the 1000W Solar Street Light features ultra-efficient solar panels and a high-capacity LiFePO₄ battery to deliver exceptional brightness, rapid charging, and uninterrupted performance even in challenging weather — ensuring superior visibility, durability, and sustainability all night long.",
         images: [
-            "/Solar-Street-Lights-for-Outdoor-1000W-1-product.jpg",
-            "/Solar-Street-Lights-for-Outdoor-1000W-2-product.jpg",
-            "/Solar-Street-Lights-for-Outdoor-1000W-3-product.jpg",
-            "/Solar-Street-Lights-for-Outdoor-1000W-4-product.jpg",
+            "/Solar-Street-Lights-1000W-1-product.jpg",
+            "/Solar-Street-Lights-1000W-2-product.jpg",
+            "/Solar-Street-Lights-1000W-3-product.jpg",
+            "/Solar-Street-Lights-1000W-4-product.jpg",
         ],
         specifications: {
             panelDetails: [
@@ -225,10 +225,10 @@ export const productData: ProductProps[] = [
         shortDescription: "FRK Solar 1000W High Mast Light delivers powerful, eco-friendly illumination with advanced solar technology and durable design. Built for reliability and efficiency, it ensures maximum brightness, long battery life, and superior performance in all weather conditions—perfect for highways, stadiums, industrial zones, and public spaces requiring consistent, high-intensity lighting.",
         description: "FRK Solar 1000W High Mast Light delivers powerful, eco-friendly illumination with advanced solar technology and durable design. Built for reliability and efficiency, it ensures maximum brightness, long battery life, and superior performance in all weather conditions—perfect for highways, stadiums, industrial zones, and public spaces requiring consistent, high-intensity lighting.",
         images: [
-            "/Solar-Street-Lights-for-Outdoor-1200W-1-product.jpg",
-            "/Solar-Street-Lights-for-Outdoor-1200W-3-product.jpg",
-            "/Solar-Street-Lights-for-Outdoor-1200W-4-product.jpg",
-            "/Solar-Street-Lights-for-Outdoor-1200W-2-product.jpg",
+            "/Solar-High-Mast-1000W-1-product.jpg",
+            "/Solar-High-Mast-1000W-2-product.jpg",
+            "/Solar-High-Mast-1000W-3-product.jpg",
+            "/Solar-High-Mast-1000W-4-product.jpg",
         ],
         specifications: {
             panelDetails: [

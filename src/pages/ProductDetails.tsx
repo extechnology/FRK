@@ -57,7 +57,7 @@ export default function ProductView() {
                                 whileTap={{ scale: 0.95 }}
                                 key={i}
                                 onClick={() => setActiveImg(i)}
-                                className={`h-16 w-16 sm:h-20 sm:w-20 flex-shrink-0 border rounded-lg overflow-hidden transition ${i === activeImg
+                                className={`h-16 w-16 sm:h-20 sm:w-20 flex-shrink-0 border rounded-lg overflow-hidden transition hover:cursor-pointer ${i === activeImg
                                     ? "ring-2 ring-green-600"
                                     : "border-gray-300 hover:border-green-400"
                                     }`}

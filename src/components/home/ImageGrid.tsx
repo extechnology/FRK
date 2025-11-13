@@ -1,5 +1,6 @@
 import { motion, easeOut } from "framer-motion";
 import type { Variants } from "framer-motion";
+import { MoveRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 
@@ -49,8 +50,8 @@ export default function ImageGrid() {
             <div className="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transform translate-y-5 group-hover:translate-y-0 transition-all duration-500">
                 <p className="text-white text-lg mb-3">{description}</p>
                 <Link to={`/products/${id}`}>
-                    <button className="px-4 py-2 bg-white text-black rounded-lg font-medium shadow-md hover:bg-gray-200 transition">
-                        Learn More
+                    <button className="px-4 py-2 hover:cursor-pointer bg-white text-black rounded-lg font-medium shadow-md hover:bg-gray-200 transition">
+                        Learn More <MoveRight className="inline-block ml-1" />
                     </button>
                 </Link>
             </div>
@@ -76,7 +77,7 @@ export default function ImageGrid() {
                     custom={0}
                 >
                     <ImageCard
-                        src="/image-gird-1.jpg"
+                        src="/engneer-at solar -panel-image-gird-1.jpg"
                         id={4}
                         alt="Engineer at solar panels"
                         description="Engineer at solar panels"
@@ -92,7 +93,7 @@ export default function ImageGrid() {
                     custom={1}
                 >
                     <ImageCard
-                        src="/image-gird-2.jpg"
+                        src="/Family-exploring-solar-energy-image-grid-2.jpg"
                         id={2}
                         alt="Mother and child at solar panels"
                         description="Family exploring solar energy"
@@ -109,7 +110,7 @@ export default function ImageGrid() {
                     className="sm:col-span-2"
                 >
                     <ImageCard
-                        src="/image-gird-3.jpg"
+                        src="/Engineers-walking-at-solar-image-gird-3.jpg.jpg"
                         id={3}
                         alt="Engineers walking at solar farm"
                         description="Engineers walking at solar farm"
