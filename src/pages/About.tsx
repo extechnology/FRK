@@ -92,7 +92,7 @@ export default function About() {
                             src="/about-us-1.jpg"
                             alt="Growth Chart"
                             loading="lazy"
-                            className="w-full h-[50vh] max-w-xl rounded-xl shadow-md"
+                            className="w-full h-[50vh] rounded-xl shadow-md"
                         />
                     </motion.div>
                 </div>
@@ -114,7 +114,7 @@ export default function About() {
                             src="/about-us-2.jpg"
                             alt="Growth Chart"
                             loading="lazy"
-                            className="w-full h-[50vh] max-w-xl rounded-xl shadow-md"
+                            className="w-full h-[50vh] rounded-xl shadow-md"
                         />
                     </motion.div>
 
@@ -171,7 +171,7 @@ export default function About() {
                             src="/about-us-3.jpg"
                             loading="lazy"
                             alt="Growth Chart"
-                            className="w-full h-[50vh] max-w-xl rounded-xl shadow-md"
+                            className="w-full h-[50vh] rounded-xl shadow-md"
                         />
                     </motion.div>
                 </div>
