@@ -50,11 +50,13 @@ export default function Solutions() {
                     </p>
                 </div>
 
-                <Link to={'/projects'}>
-                    <Button className="bg-black text-white rounded-full px-6 py-6 text-sm hover:bg-gray-900 hover:cursor-pointer hover:scale-105">
-                        Explore Our Projects →
-                    </Button>
-                </Link>
+                <div className="flex justify-center">
+                    <Link to="/projects">
+                        <Button className="bg-black text-white rounded-full px-6 py-6 text-sm hover:bg-gray-900 hover:cursor-pointer hover:scale-105 transition-transform">
+                            Explore Our Projects →
+                        </Button>
+                    </Link>
+                </div>
 
             </motion.div>
 
@@ -70,9 +72,11 @@ export default function Solutions() {
                         className="bg-white overflow-hidden flex flex-col"
                     >
                         <img src={card.image} alt={card.title} loading="lazy" className="w-full h-72 object-cover rounded-2xl" />
-                        <div className="p-4 flex flex-col gap-2">
+                        <div className="p-4 flex flex-col gap-1">
                             <h3 className="text-lg font-semibold">{card.title}</h3>
-                            <p className="text-gray-600 text-sm text-justify">{card.description}</p>
+                            <p className="text-gray-600 text-sm text-justify sm:text-left">
+                                {card.description}
+                            </p>
                         </div>
                     </motion.div>
                 ))}

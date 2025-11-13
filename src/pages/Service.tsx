@@ -97,7 +97,7 @@ export default function Service() {
                         viewport={{ once: true }}
                         className="text-3xl md:text-5xl font-bold text-gray-900 mb-4"
                     >
-                        Service Focus on Subsensible energy
+                        Service Focus on Subsensible Energy
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 30 }}

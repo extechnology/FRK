@@ -63,7 +63,7 @@ export default function ImageGrid() {
     return (
 
 
-        <section className="w-full px-4 sm:px-8 lg:px-20 py-8 sm:py-10">
+        <section className="w-full px-4 sm:px-8 lg:px-20 py-0 sm:py-10">
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
