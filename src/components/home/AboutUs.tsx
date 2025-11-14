@@ -38,7 +38,7 @@ export default function AboutUs() {
 
 
             {/* Grid Layout */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-12 items-start">
 
 
                 {/* Left Side */}
@@ -90,7 +90,7 @@ export default function AboutUs() {
 
 
                 {/* Right Side */}
-                <div className="flex flex-col gap-7 h-full">
+                <div className="flex flex-col gap-4 sm:gap-7 h-full">
 
                     {/* Description */}
                     <motion.p

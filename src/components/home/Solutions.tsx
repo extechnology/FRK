@@ -71,7 +71,7 @@ export default function Solutions() {
                         className="bg-white overflow-hidden flex flex-col"
                     >
                         <img src={card.image} alt={card.title} loading="lazy" className="w-full h-72 object-cover rounded-2xl" />
-                        <div className="p-4 flex flex-col gap-1">
+                        <div className="p-2 sm:p-4 flex flex-col gap-1">
                             <h3 className="text-lg font-semibold">{card.title}</h3>
                             <p className="text-gray-600 text-sm text-justify sm:text-left">
                                 {card.description}
