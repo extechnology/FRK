@@ -59,7 +59,7 @@ export default function Projects() {
                 {/* Header Section */}
                 <div className="block sm:flex sm:justify-between mx-auto text-center sm:text-left mb-5">
 
-                    <div className="mt-6">
+                    <div className="mt-0 sm:mt-6">
 
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                             Lighting The Way Forward
