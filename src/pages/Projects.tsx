@@ -18,6 +18,30 @@ const solutions = [
         title: "Utility-Scale Owner Solutions",
         img: "/utility-scale-project.jpg",
     },
+    {
+        title: "Sample Project Title",
+        img: "/project-image-4.jpg",
+    },
+    {
+        title: "Sample Project Title",
+        img: "/project-image-5.jpg",
+    },
+    {
+        title: "Sample Project Title",
+        img: "/project-image-6.jpg",
+    },
+    {
+        title: "Sample Project Title",
+        img: "/project-image-7.jpg",
+    },
+    {
+        title: "Sample Project Title",
+        img: "/project-image-8.jpg",
+    },
+    {
+        title: "Sample Project Title",
+        img: "/project-image-9.jpg",
+    },
 ];
 
 
