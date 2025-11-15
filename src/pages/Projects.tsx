@@ -123,21 +123,24 @@ export default function Projects() {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.2 }}
-                            className={`relative overflow-hidden bg-gray-100 flex items-center justify-center text-gray-800 font-medium text-lg hover:bg-gray-200 transition`} >
+                            className="relative overflow-hidden bg-gray-100 text-gray-800 font-medium text-lg hover:bg-gray-200 transition"
+                        >
 
-                            <>
-                                <img
-                                    src={card.img}
-                                    alt={card.title}
-                                    loading="lazy"
-                                    className="w-full h-64 md:h-72 lg:h-96 object-cover"
-                                />
-                                <div className="absolute top-0 left-0 right-0 bg-black text-white px-4 py-3 text-sm md:text-base font-semibold flex items-center justify-between">
-                                    {card.title}
-                                </div>
-                            </>
+                            {/* Title Section (Not over the image anymore) */}
+                            <div className="w-full bg-black text-white px-4 py-3 text-sm md:text-base font-semibold">
+                                {card.title}
+                            </div>
+
+                            {/* Image Section */}
+                            <img
+                                src={card.img}
+                                alt={card.title}
+                                loading="lazy"
+                                className="w-full h-64 md:h-72 lg:h-full object-cover"
+                            />
 
                         </motion.div>
+
 
                     ))}
 
