@@ -5,6 +5,8 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { productData } from "@/lib/mockdata";
 import { Calculator, CheckCircle, ShoppingCart } from "lucide-react";
+import ImgZoom from "@/components/common/ImgZoom";
+
 
 
 
@@ -35,16 +37,17 @@ export default function ProductView() {
                 {/* Image Gallery */}
                 <div>
 
-                    <motion.img
-                        key={activeImg}
-                        src={product.images[activeImg]}
-                        alt={product.title}
-                        loading="lazy"
+
+
+                    <motion.div
                         className="w-full rounded-2xl shadow-lg object-cover"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.4 }}
-                    />
+                    >
+                        <ImgZoom src={product.images[activeImg]} alt={product.title} />
+
+                    </motion.div>
 
 
                     {/* Thumbnails */}
