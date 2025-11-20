@@ -70,7 +70,7 @@ export const productData: ProductProps[] = [
                 { label: "Standards Compliance", value: "IS : 15885 / IS : 16104 / IEC 62384 (latest)" },
             ],
         },
-        warranty: "Solar Street Lights 600W come with a reliable 3-years Service warranty, assuring long-term performance, durability, and peace of mind. This warranty reflects our commitment to quality, customer satisfaction, and trust in our advanced solar lighting technology.",
+        warranty: "Solar Street Lights 600W come with a reliable 2-years Service warranty, assuring long-term performance, durability, and peace of mind. This warranty reflects our commitment to quality, customer satisfaction, and trust in our advanced solar lighting technology.",
         notes: [
             "Built-in LiFePO₄ battery with a lifespan of over 10 years.",
             "Uses Mono PERC HPT solar panels for fast charging and high efficiency.",
@@ -122,9 +122,9 @@ export const productData: ProductProps[] = [
                 { label: "PIR Sensor", value: "Optional (energy saving feature)" },
                 { label: "Features", value: "Flicker-free, Dimming Option" },
                 { label: "Lamp Output", value: "2178.041 lm" },
-                { label: "Colour Temperature", value: "6500K" },
+                { label: "Colour Temperature", value: "7000K" },
                 { label: "Light Size", value: "21 × 41 × 8 cm" },
-                { label: "Number of LEDs", value: "69" },
+                { label: "Number of LEDs", value: "360" },
                 { label: "Light Working Time", value: "2 Days Backup (First 6 Hours → 100% Brightness / After 6 Hours → 80%)" },
                 { label: "Driver", value: "Inbuilt DC-DC" },
                 { label: "Beam Angle", value: "120°" },
@@ -134,7 +134,7 @@ export const productData: ProductProps[] = [
                 { label: "Standards Compliance", value: "IS : 15885 / IS : 16104 / IEC 62384 (latest)" },
             ],
         },
-        warranty: "Solar Street Lights 600W come with a reliable 3-years Service warranty, assuring long-term performance, durability, and peace of mind. This warranty reflects our commitment to quality, customer satisfaction, and trust in our advanced solar lighting technology.",
+        warranty: "Solar Street Lights 600W come with a reliable 2-years Service warranty, assuring long-term performance, durability, and peace of mind. This warranty reflects our commitment to quality, customer satisfaction, and trust in our advanced solar lighting technology.",
         notes: [
             "Built-in LiFePO₄ battery with a lifespan of over 10 years.",
             "Uses Mono PERC HPT solar panels for fast charging and high efficiency.",
@@ -201,7 +201,7 @@ export const productData: ProductProps[] = [
                 { label: "Standards Compliance", value: "IS : 15885 (Part 2 / Sec 13) / IS : 16104 / IEC 62384 (latest)" },
             ],
         },
-        warranty: "Solar Street Lights 800W come with a reliable 3-years Service warranty, assuring long-term performance, durability, and peace of mind. This warranty reflects our commitment to quality, customer satisfaction, and trust in our advanced solar lighting technology",
+        warranty: "Solar Street Lights 800W come with a reliable 2-years Service warranty, assuring long-term performance, durability, and peace of mind. This warranty reflects our commitment to quality, customer satisfaction, and trust in our advanced solar lighting technology",
         notes: [
             "Built-in LiFePO₄ battery with a lifespan of over 10 years.",
             "Uses Mono PERC HPT solar panels for fast charging and high efficiency.",
@@ -268,7 +268,7 @@ export const productData: ProductProps[] = [
                 { label: "Standards Compliance", value: "IS : 15885 (Part 2 / Sec 13) / IS : 16104 / IEC 62384 (latest)" },
             ],
         },
-        warranty: "Solar Street Lights 1000W come with a reliable 3-years Service warranty, assuring long-term performance, durability, and peace of mind. This warranty reflects our commitment to quality, customer satisfaction, and trust in our advanced solar lighting technology.",
+        warranty: "Solar Street Lights 1000W come with a reliable 2-years Service warranty, assuring long-term performance, durability, and peace of mind. This warranty reflects our commitment to quality, customer satisfaction, and trust in our advanced solar lighting technology.",
         notes: [
             "Built-in LiFePO₄ battery with a lifespan of over 10 years.",
             "Uses Mono PERC HPT solar panels for fast charging and high efficiency.",
@@ -335,7 +335,7 @@ export const productData: ProductProps[] = [
                 { label: "Standards Compliance", value: "IS : 15885 (Part 2 / Sec 13) / IS : 16104 / IEC 62384 (latest)" },
             ],
         },
-        warranty: "Solar Street HIGH MAST 1000W comes with a reliable 3-year Service warranty, assuring long-term performance, durability, and peace of mind. This warranty reflects our commitment to quality, customer satisfaction, and trust in our advanced solar lighting technology.",
+        warranty: "Solar Street HIGH MAST 1000W comes with a reliable 2-year Service warranty, assuring long-term performance, durability, and peace of mind. This warranty reflects our commitment to quality, customer satisfaction, and trust in our advanced solar lighting technology.",
         notes: [
             "Built-in LiFePO₄ battery with a lifespan of over 10 years.",
             "Uses Mono PERC HPT solar panels for fast charging and high efficiency.",
