@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 import HeroBanner from "@/components/common/HeroBanner";
+import ImgZoom from "@/components/common/ImgZoom";
+
 
 
 
@@ -132,12 +134,7 @@ export default function Projects() {
                             </div>
 
                             {/* Image Section */}
-                            <img
-                                src={card.img}
-                                alt={card.title}
-                                loading="lazy"
-                                className="w-full h-64 md:h-72 lg:h-full object-cover"
-                            />
+                            <ImgZoom src={card.img} alt={card.title} key={card.title} />
 
                         </motion.div>
 
