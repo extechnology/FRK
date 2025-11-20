@@ -9,39 +9,27 @@ import ImgZoom from "@/components/common/ImgZoom";
 // ✅ Data
 const solutions = [
     {
-        title: "Homeowner Solutions",
-        img: "/Home-owner-project.jpg",
-    },
-    {
-        title: "Business Owner Solutions",
-        img: "/Bussiness-owner-project.jpg",
-    },
-    {
-        title: "Utility-Scale Owner Solutions",
-        img: "/utility-scale-project.jpg",
-    },
-    {
-        title: "Sample Project Title",
+        title: "Aster MIMS Kannur",
         img: "/project-image-4.jpg",
     },
     {
-        title: "Sample Project Title",
+        title: "Azeezia Medical College Palakkad",
         img: "/project-image-5.jpg",
     },
     {
-        title: "Sample Project Title",
+        title: "Varakkal Beach Calicut",
         img: "/project-image-6.jpg",
     },
     {
-        title: "Sample Project Title",
+        title: "3G Villa Manjeri",
         img: "/project-image-7.jpg",
     },
     {
-        title: "Sample Project Title",
+        title: "Chelari Customer House",
         img: "/project-image-8.jpg",
     },
     {
-        title: "Sample Project Title",
+        title: "Wayanad Churam",
         img: "/project-image-9.jpg",
     },
 ];
