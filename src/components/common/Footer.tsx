@@ -92,8 +92,8 @@ export default function Footer() {
 
 
           <div className="flex gap-5 text-sm text-gray-400">
-            <a href="#" className="hover:text-gray-300 hover-cursor-pointer">Terms & Conditions</a>
-            <a href="#" className="hover:text-gray-300 hover-cursor-pointer">Privacy Policy</a>
+            <a className="hover:text-gray-300 hover-cursor-pointer">Terms & Conditions</a>
+            <a className="hover:text-gray-300 hover-cursor-pointer">Privacy Policy</a>
           </div>
 
         </div>
@@ -112,7 +112,7 @@ export default function Footer() {
                 <li className="hover:text-gray-200"><Link to={'/'}>Home</Link></li>
                 <li className="hover:text-gray-200"><Link to={'/about'}>About</Link></li>
                 <li className="hover:text-gray-200"><Link to={'/service'}>Services</Link></li>
-                <li className="hover:text-gray-200"><Link to={'/product'}>Products</Link></li>
+                <li className="hover:text-gray-200"><Link to={'/products'}>Products</Link></li>
                 <li className="hover:text-gray-200"><Link to={'/projects'}>Projects</Link></li>
               </ul>
             </div>
