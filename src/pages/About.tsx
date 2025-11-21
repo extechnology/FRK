@@ -56,8 +56,7 @@ export default function About() {
             />
 
 
-            <div className="px-2 sm:px-10 lg:px-20 pb-8 sm:pb-10">
-
+            <div className="px-2 sm:px-10 lg:px-14 pb-8 sm:pb-10">
 
 
                 {/* Animated Heading */}
@@ -104,7 +103,7 @@ export default function About() {
                         return (
                             <div
                                 key={index}
-                                className="pt-6 sm:pt-16 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-24 items-center"
+                                className="pt-6 sm:pt-16 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-10 md:gap-16 items-center"
                             >
                                 {/* Left Content (or Right, depending on index) */}
                                 <motion.div

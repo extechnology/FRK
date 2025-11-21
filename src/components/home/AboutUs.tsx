@@ -5,10 +5,10 @@ import type { Variants } from "framer-motion";
 
 
 
+
 export default function AboutUs() {
 
 
-    // Variants for staggered fade-up
     const fadeUp: Variants = {
         hidden: { opacity: 0, y: 40 },
         visible: (i: number = 0) => ({
@@ -19,8 +19,6 @@ export default function AboutUs() {
     };
 
 
-
-    // Image reveal effect (drop from top → bottom)
     const dropReveal: Variants = {
         hidden: { clipPath: "inset(0 0 100% 0)" },
         visible: {
@@ -34,16 +32,15 @@ export default function AboutUs() {
     return (
 
 
-        <section className="w-full px-2 sm:px-10 lg:px-20 py-8 sm:py-10">
+        <section className="w-full px-2 sm:px-10 lg:px-14 py-5 sm:py-10">
 
 
-            {/* Grid Layout */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-12 items-start">
+            {/* Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 items-stretch">
 
 
-                {/* Left Side */}
-                <div className="flex flex-col gap-6">
-
+                {/* LEFT COLUMN */}
+                <div className="flex flex-col h-full gap-6">
 
                     {/* Heading */}
                     <motion.h2
@@ -54,43 +51,38 @@ export default function AboutUs() {
                         custom={0}
                         className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight"
                     >
-                       Shining Light on Every 
+                        Shining Light on Every
                         <br />
-                        Pathway with the Sun
+                        Pathway with&nbsp;the&nbsp;Sun
                     </motion.h2>
 
-
-                    {/* Large Image with reveal */}
+                    {/* BIG IMAGE */}
                     <motion.div
                         variants={dropReveal}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="relative rounded-2xl overflow-hidden shadow-lg group"
+                        className="relative rounded-2xl overflow-hidden shadow-lg group flex-1"
                     >
-
                         <img
                             src="/hero-about-1.jpg"
                             alt="Packaging industry machinery"
-                            className="w-full object-cover min-h-[260px] sm:min-h-[320px] lg:min-h-[640px] transform transition-transform duration-500 group-hover:scale-110"
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             loading="lazy"
                         />
 
-                        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-                        <Link to={"/about"}>
-                            <button className="absolute bottom-4 left-4 bg-white text-black font-medium px-4 py-2 rounded-full shadow-md hover:scale-105 transform transition hover:cursor-pointer">
+                        <Link to="/about">
+                            <button className="absolute bottom-4 left-4 bg-white text-black font-medium px-4 py-2 rounded-full shadow-md hover:scale-105 transition">
                                 Explore more about us
                             </button>
                         </Link>
-
                     </motion.div>
-
                 </div>
 
-
-                {/* Right Side */}
-                <div className="flex flex-col gap-4 sm:gap-7 h-full">
+                {/* RIGHT COLUMN */}
+                <div className="flex flex-col h-full justify-between gap-6">
 
                     {/* Description */}
                     <motion.p
@@ -99,13 +91,17 @@ export default function AboutUs() {
                         whileInView="visible"
                         viewport={{ once: true }}
                         custom={1}
-                        className="text-gray-600 text-sm sm:text-base max-w-[520px] leading-relaxed text-justify"
+                        className="text-gray-600 text-sm sm:text-base leading-relaxed text-justify"
                     >
-                        FRK Solar Streetlight stands as a symbol of reliability and innovation in solar lighting solutions. As a trusted brand from a trusted name, we are dedicated to delivering high-quality, energy-efficient, and eco-friendly solar street lights that brighten communities and protect the environment. With advanced technology, durable designs, and a strong focus on customer satisfaction, FRK continues to lead the way in sustainable outdoor lighting. Choose FRK where excellence meets trust, and every light shines with purpose
+                        FRK Solar Streetlight stands as a symbol of reliability and innovation in solar lighting solutions.
+                        As a trusted brand from a trusted name, we are dedicated to delivering high-quality, energy-efficient,
+                        and eco-friendly solar street lights that brighten communities and protect the environment. With
+                        advanced technology, durable designs, and a strong focus on customer satisfaction, FRK continues to
+                        lead the way in sustainable outdoor lighting. Choose FRK where excellence meets trust, and every light
+                        shines&nbsp;with&nbsp;purpose.
                     </motion.p>
 
-
-                    {/* Specialty List */}
+                    {/* Specialty */}
                     <motion.div
                         variants={fadeUp}
                         initial="hidden"
@@ -114,6 +110,7 @@ export default function AboutUs() {
                         custom={2}
                     >
                         <h3 className="text-2xl font-semibold mb-4">Our Speciality</h3>
+
                         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                             {[
                                 "High-Efficiency Solar Technology",
@@ -130,41 +127,35 @@ export default function AboutUs() {
                                     whileInView="visible"
                                     viewport={{ once: true }}
                                     custom={idx + 3}
-                                    className="flex items-center gap-3 text-gray-700 bg-white/40 rounded-md px-2 py-1"
+                                    className="flex items-center gap-3 text-gray-700 bg-white/60 rounded-md px-2 py-1"
                                 >
-                                    <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-emerald-500" />
                                     <span className="text-sm">{item}</span>
                                 </motion.li>
                             ))}
                         </ul>
-
                     </motion.div>
 
-
-                    {/* Small Image Reveal */}
+                    {/* SMALL IMAGE */}
                     <motion.div
                         variants={dropReveal}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="relative rounded-2xl overflow-hidden shadow-lg group self-stretch"
+                        className="relative rounded-2xl overflow-hidden shadow-lg group flex-1 self-stretch"
                     >
                         <img
                             src="/hero-about-2.jpg"
                             alt="Easypack factory packaging process"
-                            className="w-full object-cover h-[300px] sm:h-[240px] lg:h-[365px] transform transition-transform duration-500 group-hover:scale-110"
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             loading="lazy"
                         />
-                        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    </motion.div>   
-
+                        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    </motion.div>
                 </div>
-
 
             </div>
 
         </section>
-
     );
-
 }

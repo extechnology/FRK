@@ -68,7 +68,7 @@ export default function Projects() {
             />
 
 
-            <div className="px-2 sm:px-10 lg:px-20 pb-8 sm:pb-16">
+            <div className="px-2 sm:px-10 lg:px-14 pb-8 sm:pb-16">
 
                 {/* Header Section */}
                 <div className="block sm:flex sm:justify-between mx-auto text-center sm:text-left mb-5">

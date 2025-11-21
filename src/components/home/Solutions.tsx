@@ -34,7 +34,7 @@ export default function Solutions() {
     return (
 
 
-        <section className="w-full px-2 sm:px-10 lg:px-20 py-8 sm:py-5">
+        <section className="w-full px-2 sm:px-10 lg:px-14 py-8 sm:py-5">
 
             <motion.div
                 initial={{ opacity: 0, y: -30 }}

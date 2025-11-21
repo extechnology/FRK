@@ -25,15 +25,15 @@ export default function BentoGrid() {
     return (
 
 
-        <div className="w-full px-2 sm:px-10 lg:px-20 py-2 sm:py-5">
+        <div className="w-full px-2 sm:px-10 lg:px-14 py-2 sm:py-5">
 
 
-            <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr] gap-6">
 
 
                 {/* Left Green Services Card */}
                 <motion.div
-                    className="bg-green-800 text-white rounded-xl px-5 sm:px-10 flex flex-col justify-center md:row-span-2 md:h-[320px]"
+                    className="bg-green-800 text-white rounded-xl px-5 sm:px-10 flex flex-col justify-center md:row-span-2 h-[320px] md:h-[330px]"
                     custom={0}
                     variants={cardVariants}
                     initial="hidden"
@@ -55,13 +55,13 @@ export default function BentoGrid() {
                                 className="flex justify-between items-center group cursor-pointer"
                             >
 
-                                <span className="relative transition-colors duration-300 group-hover:text-green-400">
+                                <span className="relative transition-colors text-md sm:text-3xl duration-300 group-hover:text-green-400">
                                     {item.name}
                                     {/* underline effect */}
                                     <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-green-400 transition-all duration-300 group-hover:w-full"></span>
                                 </span>
 
-                                <span className="text-white transition-colors duration-300 group-hover:text-green-400">
+                                <span className="text-white transition-colors duration-300 group-hover:text-green-400 text-md sm:text-3xl">
                                     {item.value}
                                 </span>
 
@@ -77,7 +77,7 @@ export default function BentoGrid() {
 
                 {/* Middle Image Card */}
                 <motion.div
-                    className="rounded-xl overflow-hidden h-90 p-5 sm:p-0 md:h-[320px] border-2"
+                    className="rounded-xl overflow-hidden h-[420px] p-6 sm:p-5 md:h-[820px] lg:h-[330px] border-2"
                     custom={1}
                     variants={cardVariants}
                     initial="hidden"
@@ -95,7 +95,7 @@ export default function BentoGrid() {
 
                 {/* Right Image Card */}
                 <motion.div
-                    className="rounded-xl overflow-hidden h-90 p-5 sm:p-0 md:h-[320px] border-2"
+                    className="rounded-xl overflow-hidden h-[420px] p-6 sm:p-5 md:h-[820px] lg:h-[330px] border-2"
                     custom={2}
                     variants={cardVariants}
                     initial="hidden"

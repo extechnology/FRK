@@ -81,8 +81,8 @@ const ProductCard: React.FC<ProductProps> = ({ id, title, subtitle, description,
 
 
             {/* Image */}
-            <Link to={`/products/${id}`} className="relative h-72 overflow-hidden">
-                <div className="relative h-72 overflow-hidden">
+            <Link to={`/products/${id}`} className="relative h-full overflow-hidden">
+                <div className="relative h-full overflow-hidden">
                     <motion.img
                         src={images[0]}
                         alt={title}
@@ -90,7 +90,7 @@ const ProductCard: React.FC<ProductProps> = ({ id, title, subtitle, description,
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.8 }}
                         loading="lazy"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover p-5"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                     <div className="absolute bottom-4 left-4 text-white">
