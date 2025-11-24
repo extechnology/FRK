@@ -8,8 +8,8 @@ import { BlurFade } from "@/components/ui/blur-fade"
 
 
 
-export default function Index() {
 
+export default function Index() {
 
 
   return (

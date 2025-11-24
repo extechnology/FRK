@@ -128,7 +128,7 @@ const Navbar = () => {
                 <Link
                   to={itemObj.href}
                   className={cn(
-                    "px-4 py-2 rounded-md text-sm font-medium transition-all",
+                    "px-4 py-2 rounded-md text-sm font-semibold transition-all",
                     location.pathname === itemObj.href
                       ? isTransparent
                         ? "bg-white/20 text-white rounded-2xl"
