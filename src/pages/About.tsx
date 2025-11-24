@@ -52,7 +52,7 @@ export default function About() {
             <HeroBanner
                 title="About Us"
                 desc="Brighten every corner with eco-friendly solar lights,designed for durability, reliability, and sustainability"
-                image="/About-banner.jpg"
+                image="/About-banner.webp"
             />
 
 

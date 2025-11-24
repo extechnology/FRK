@@ -39,7 +39,7 @@ export default function ImageGrid() {
             <img
                 src={src}
                 alt={alt}
-                className="w-full h-[600px] object-cover transform transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-[700px] object-cover transform transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
             />
 
@@ -77,7 +77,7 @@ export default function ImageGrid() {
                     custom={0}
                 >
                     <ImageCard
-                        src="/engneer-at solar -panel-image-gird-1.jpg"
+                        src="/engneer-at-solar-panel-image-gird-1.webp"
                         id={4}
                         alt="Engineer at solar panels"
                         description="Engineer at solar panels"
@@ -110,12 +110,13 @@ export default function ImageGrid() {
                     className="sm:col-span-2"
                 >
                     <ImageCard
-                        src="/Engineers-walking-at-solar-image-gird-3.jpg.jpg"
+                        src="/Engineers-walking-at-solar-image-gird-3.webp"
                         id={3}
                         alt="Engineers walking at solar farm"
                         description="Engineers walking at solar farm"
                     />
                 </motion.div>
+
             </div>
         </section>
     );
