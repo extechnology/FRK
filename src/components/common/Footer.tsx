@@ -24,14 +24,17 @@ export default function Footer() {
         {/* Left Section */}
         <div className="space-y-6">
 
-          <div className="flex items-center gap-2">
-            <img src="/FRK-logo-white.png" className="w-48 h-16 object-contain" alt="foot-logo" />
+          <div className="flex flex-col justify-start items-start gap-2">
+            
+            <img src="/FRK-logo-white-footer.png" className="w-48 h-16 object-contain -ml-6" alt="foot-logo" />
+
+            <p className="text-gray-300 max-w-md text-md leading-relaxed">
+              Lighting the Way Forward
+            </p>
+
           </div>
 
 
-          <p className="text-gray-300 max-w-md text-sm leading-relaxed">
-            Lighting the Way Forward
-          </p>
 
 
           {/* Social Icons */}
