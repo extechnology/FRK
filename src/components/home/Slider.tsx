@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 // Slider data
 const slides = [
     {
-        image: "/Home-Banner.jpg",
+        image: "/Home-Banner.webp",
         title: "Reliable Solar Lights Day After Day.",
         desc: "Brighten every corner with eco-friendly solar lights,designed for durability, reliability, and sustainability",
     },

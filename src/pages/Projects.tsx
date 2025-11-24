@@ -7,30 +7,66 @@ import ImgZoom from "@/components/common/ImgZoom";
 
 
 // ✅ Data
-const solutions = [
+const solutions: { id: number; title: string; img: string }[] = [
     {
+        id: 1,
         title: "Aster MIMS Kannur",
         img: "/project-image-4.jpg",
     },
     {
+        id: 2,
+        title: "Aster MIMS Calicut",
+        img: "/Aster-mims-Calicut-Project.webp",
+    },
+    {
+        id: 3,
         title: "Azeezia Medical College Palakkad",
         img: "/project-image-5.jpg",
     },
     {
-        title: "Varakkal Beach Calicut",
+        id: 4,
+        title: "Calicut Beach",
         img: "/project-image-6.jpg",
     },
     {
+        id: 5,
+        title: "Varakkal Beach Kozhikode",
+        img: "/Varakkal-Beach-Kozhikode.webp",
+    },
+    {
+        id: 6,
         title: "3G Villa Manjeri",
         img: "/project-image-7.jpg",
     },
     {
-        title: "Chelari Customer House",
-        img: "/project-image-8.jpg",
-    },
-    {
+        id: 7,
         title: "Wayanad Churam",
         img: "/project-image-9.jpg",
+    },
+    {
+        id: 8,
+        title: "Chelari Customer House",
+        img: "/Chelari-Customer-House-Project.webp",
+    },
+    {
+        id: 9,
+        title: "Mukkam KMCT",
+        img: "/Mukkam-KMCT-Project.webp",
+    },
+    {
+        id: 10,
+        title: "Stonecity",
+        img: "/Stonecity-Project.webp",
+    },
+    {
+        id: 11,
+        title: "Thrikkaripur Tropical Blue Resort",
+        img: "/Thrikkaripur-Tropical-blue-Resort-Project.webp",
+    },
+    {
+        id: 12,
+        title: "Thrissur Customer Farmhouse",
+        img: "/thrissur-customer-farmhouse-Project.webp",
     },
 ];
 
@@ -64,7 +100,7 @@ export default function Projects() {
             <HeroBanner
                 title="Our Projects"
                 desc=" Discover our successful solar and energy projects, empowering communities and businesses with sustainable solutions worldwide."
-                image="/Project-banner.jpg"
+                image="/Project-banner.webp"
             />
 
 
