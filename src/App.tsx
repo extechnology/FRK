@@ -15,7 +15,7 @@ const Projects = lazy(() => import("./pages/Projects"))
 const Contact = lazy(() => import("./pages/Contact"))
 const Terms = lazy(() => import("./pages/Terms"))
 const Privacy = lazy(() => import("./pages/PrivacyPolicy"))
-
+const Notfound = lazy(() => import("./pages/NotFound"))
 
 
 
@@ -66,7 +66,7 @@ function App() {
 
 
         {/* 404 */}
-        <Route path="*" element={<div>404</div>} />
+        <Route path="*" element={<Notfound />} />
 
 
       </Routes>
