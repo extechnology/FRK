@@ -30,8 +30,7 @@ export default function Footer() {
 
 
           <p className="text-gray-300 max-w-md text-sm leading-relaxed">
-            Solar energy reduces greenhouse gases and air pollutants, helping
-            combat climate change. Explore the top financial.
+            Lighting the Way Forward
           </p>
 
 
@@ -92,8 +91,8 @@ export default function Footer() {
 
 
           <div className="flex gap-5 text-sm text-gray-400">
-            <a className="hover:text-gray-300 hover-cursor-pointer">Terms & Conditions</a>
-            <a className="hover:text-gray-300 hover-cursor-pointer">Privacy Policy</a>
+            <Link to={'/terms-and-conditions'} className="hover:text-gray-300 hover-cursor-pointer">Terms & Conditions</Link>
+            <Link to={'/privacy-policy'} className="hover:text-gray-300 hover-cursor-pointer">Privacy Policy</Link>
           </div>
 
         </div>
@@ -169,7 +168,7 @@ export default function Footer() {
 
 
       <div className="flex flex-col text-gray-400 items-center justify-center mt-5 sm:mt-0">
-        <a href="#" className="hover-cursor-pointer text-xs">©2025 FRK LIGHTING SOLUTIONS All rights reserved</a>
+        <a href="#" className="hover-cursor-pointer text-xs">©{new Date().getFullYear()} FRK LIGHTING SOLUTIONS All rights reserved</a>
         <a href="https://extechnology.in" target="_blank" className="hover-cursor-pointer text-sm">Developed by <span className="text-white">ex-technology</span></a>
       </div>
 

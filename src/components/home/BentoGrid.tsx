@@ -55,13 +55,13 @@ export default function BentoGrid() {
                                 className="flex justify-between items-center group cursor-pointer"
                             >
 
-                                <span className="relative transition-colors text-md sm:text-3xl duration-300 group-hover:text-green-400">
+                                <span className="relative transition-colors text-md sm:text-3xl duration-300 group-hover:text-green-400 font-semibold">
                                     {item.name}
                                     {/* underline effect */}
                                     <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-green-400 transition-all duration-300 group-hover:w-full"></span>
                                 </span>
 
-                                <span className="text-white transition-colors duration-300 group-hover:text-green-400 text-md sm:text-3xl">
+                                <span className="text-white transition-colors duration-300 group-hover:text-green-400 text-md sm:text-3xl font-semibold">
                                     {item.value}
                                 </span>
 

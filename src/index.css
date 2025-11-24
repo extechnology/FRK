@@ -157,3 +157,9 @@ html {
   cursor: pointer;
   /* color when hovering over the thumb */
 }
+
+*{
+
+  font-family: Arial, Helvetica, sans-serif;
+
+}
