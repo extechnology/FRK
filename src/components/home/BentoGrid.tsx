@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 import { Link } from "react-router-dom";
+import CountUp from "../CountUp";
 
 
 
 
 export default function BentoGrid() {
+
 
 
     const cardVariants: Variants = {
@@ -22,6 +24,20 @@ export default function BentoGrid() {
     };
 
 
+
+    // Statistics Data
+    const stats: { name: string; value: number; symbol: string }[] = [
+
+        { name: "Product Deliveries", value: 25, symbol: "L+" },
+        { name: "Project Executions", value: 400, symbol: "+" },
+        { name: "Satisfied Customers", value: 50, symbol: "K+" },
+        { name: "Reserved Energy ( Units )", value: 100, symbol: "Mill+" },
+
+    ]
+
+
+
+
     return (
 
 
@@ -33,7 +49,7 @@ export default function BentoGrid() {
 
                 {/* Left Green Services Card */}
                 <motion.div
-                    className="bg-green-800 text-white rounded-xl px-5 sm:px-10 flex flex-col justify-center md:row-span-2 h-[320px] md:h-[330px]"
+                    className="bg-gradient-to-br from-black via-gray-900 to-black text-white rounded-xl px-5 sm:px-10 flex flex-col justify-center md:row-span-2 h-[320px] md:h-[330px]"
                     custom={0}
                     variants={cardVariants}
                     initial="hidden"
@@ -43,12 +59,7 @@ export default function BentoGrid() {
 
                     <ul className="space-y-6 text-2xl font-medium py-5 sm:py-0">
 
-                        {[
-                            { name: "Product Deliveries", value: "+25L" },
-                            { name: "Project Executions", value: "+400" },
-                            { name: "Satisfied Customers", value: "+50K" },
-                            { name: "Reserved Energy( Units )", value: "+100 Mill" },
-                        ].map((item, i) => (
+                        {stats.map((item, i) => (
 
                             <li
                                 key={i}
@@ -57,12 +68,22 @@ export default function BentoGrid() {
 
                                 <span className="relative transition-colors text-md sm:text-3xl duration-300 group-hover:text-green-400 font-semibold">
                                     {item.name}
-                                    {/* underline effect */}
                                     <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-green-400 transition-all duration-300 group-hover:w-full"></span>
                                 </span>
 
                                 <span className="text-white transition-colors duration-300 group-hover:text-green-400 text-md sm:text-3xl font-semibold">
-                                    {item.value}
+
+                                    <CountUp
+                                        from={0}
+                                        to={item.value}
+                                        separator=","
+                                        direction="up"
+                                        duration={1}
+                                        startWhen={true}
+                                        className="count-up-text"
+                                    />
+
+                                    {item.symbol}
                                 </span>
 
                             </li>

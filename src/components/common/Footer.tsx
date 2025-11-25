@@ -22,10 +22,10 @@ export default function Footer() {
 
 
         {/* Left Section */}
-        <div className="space-y-6">
+        <div className="space-y-3">
 
           <div className="flex flex-col justify-start items-start gap-2">
-            
+
             <img src="/FRK-logo-white-footer.png" className="w-48 h-16 object-contain -ml-6" alt="foot-logo" />
 
             <p className="text-gray-300 max-w-md text-md leading-relaxed">
@@ -35,10 +35,8 @@ export default function Footer() {
           </div>
 
 
-
-
           {/* Social Icons */}
-          <div className="flex">
+          <div className="flex -ml-2">
 
             <a
               href="https://www.facebook.com/frklighting/"
@@ -47,7 +45,7 @@ export default function Footer() {
             >
               <i className="fa-brands fa-facebook fa-xl"></i>
             </a>
-
+    
             <a
               href="https://www.instagram.com/frk.lighting/"
               target="_blank"
@@ -90,12 +88,6 @@ export default function Footer() {
               <i className="fa-brands fa-youtube fa-xl"></i>
             </a>
 
-          </div>
-
-
-          <div className="flex gap-5 text-sm text-gray-400">
-            <Link to={'/terms-and-conditions'} className="hover:text-gray-300 hover-cursor-pointer">Terms & Conditions</Link>
-            <Link to={'/privacy-policy'} className="hover:text-gray-300 hover-cursor-pointer">Privacy Policy</Link>
           </div>
 
         </div>
@@ -145,7 +137,6 @@ export default function Footer() {
             </div>
 
 
-
             <div>
               <h5 className="font-medium mb-3">Address</h5>
               <a
@@ -160,7 +151,6 @@ export default function Footer() {
             </div>
 
 
-
           </div>
 
 
@@ -170,10 +160,19 @@ export default function Footer() {
       </div>
 
 
-      <div className="flex flex-col text-gray-400 items-center justify-center mt-5 sm:mt-0">
+      <div className="flex text-gray-400 items-center justify-between mt-5 sm:mt-10 border-t border-gray-600 pt-4 flex-col sm:flex-row gap-3">
+
+        <div className="flex gap-5 text-sm text-gray-400">
+          <Link to={'/terms-and-conditions'} className="hover:text-gray-300 hover-cursor-pointer">Terms & Conditions</Link>
+          <Link to={'/privacy-policy'} className="hover:text-gray-300 hover-cursor-pointer">Privacy Policy</Link>
+        </div>
+
         <a href="#" className="hover-cursor-pointer text-xs">©{new Date().getFullYear()} FRK LIGHTING SOLUTIONS All rights reserved</a>
+
         <a href="https://extechnology.in" target="_blank" className="hover-cursor-pointer text-sm">Developed by <span className="text-white">ex-technology</span></a>
+
       </div>
+
 
     </motion.footer>
 
