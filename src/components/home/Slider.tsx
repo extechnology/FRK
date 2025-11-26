@@ -61,7 +61,7 @@ export default function HeroSlider() {
                                 initial={{ opacity: 0, y: 60 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.9, ease: "easeOut" }}
-                                className="absolute -top-40 sm:-top-10 inset-0 flex flex-col justify-center px-6 sm:px-14 text-white z-10 max-w-3xl"
+                                className="absolute -top-44 sm:-top-10 inset-0 flex flex-col justify-center px-6 sm:px-14 text-white z-10 max-w-3xl"
                             >
                                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-3">
                                     {slide.title}
@@ -79,7 +79,7 @@ export default function HeroSlider() {
                                 initial={{ opacity: 0, scale: 0.8 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 transition={{ delay: 0.6, duration: 0.6 }}
-                                className="absolute sm:bottom-16 bottom-10 sm:left-16 left-10 z-20"
+                                className="absolute sm:bottom-16 bottom-16 sm:left-16 left-10 z-20"
                             >
                                 <Link to={'/products'}>
                                     <div className="relative w-24 h-24 flex items-center justify-center">
@@ -98,7 +98,6 @@ export default function HeroSlider() {
                                                 className=""
                                             />
                                         </div>
-
 
                                     </div>
                                 </Link>

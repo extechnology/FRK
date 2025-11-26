@@ -8,7 +8,7 @@ export default function Service() {
 
 
     // ✅ Data
-    const services = [
+    const services : { title: string, desc: string, img: string} [] = [
         {
             title: "Site Assessment & Feasibility Study",
             desc: "Conducts comprehensive site assessments and feasibility studies to ensure optimal solar street lighting solutions. By analyzing location, sunlight availability, and energy requirements, FRK designs efficient, reliable, and cost-effective systems that maximize performance, minimize wastage, and guarantee sustainable, long-lasting illumination tailored to each project’s unique needs.",
@@ -58,11 +58,16 @@ export default function Service() {
 
 
 
+
     const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+
+
 
     const toggleExpand = (index: number) => {
         setExpandedIndex(expandedIndex === index ? null : index);
     };
+
+
 
     const getShortDesc = (desc: string) => {
         const words = desc.split(" ");
@@ -70,7 +75,7 @@ export default function Service() {
     };
 
 
-
+    
     return (
 
 
@@ -85,17 +90,17 @@ export default function Service() {
             />
 
 
-            <section className="mx-auto px-2 sm:px-6 pt-2 pb-10 sm:pb-16 sm:pt-3">
+            <section className="mx-auto px-2 sm:px-6 pt-0 pb-10 sm:pb-16 sm:pt-3">
 
 
                 {/* Heading */}
-                <div className="text-center mb-12">
+                <div className="text-center mb-4 sm:mb-12">
                     <motion.h2
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         viewport={{ once: true }}
-                        className="text-3xl md:text-5xl font-bold text-gray-900 mb-4"
+                        className="text-3xl md:text-5xl font-bold text-gray-900 mb-2 sm:mb-4"
                     >
                         Service Focus on Subsensible Energy
                     </motion.h2>
@@ -113,9 +118,9 @@ export default function Service() {
                 </div>
 
 
-
                 {/* Service Grid */}
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
                     {services.map((service, i) => (
                         <motion.div
                             key={i}
@@ -140,7 +145,9 @@ export default function Service() {
                             <div className="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition"></div>
 
                             {/* Content */}
-                            <div className="relative z-10 p-6 flex flex-col justify-end h-full">
+                            <div className="relative z-10 px-3 py-2 sm:p-6 flex flex-col justify-end h-full">
+
+                                {/* Title */}
                                 <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
 
                                 {/* Description */}

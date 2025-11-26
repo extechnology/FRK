@@ -102,7 +102,7 @@ const ProductCard: React.FC<ProductProps> = ({ id, title, subtitle, description,
 
 
             {/* Content */}
-            <div className="p-6 flex flex-col flex-grow">
+            <div className="px-3 py-5 sm:p-6 flex flex-col flex-grow">
 
                 <p className="text-gray-600 text-sm flex-grow text-justify">
                     {description.split(' ').slice(0, 20).join(' ') + (description.split(' ').length > 20 ? '...' : '')}

@@ -85,7 +85,7 @@ const Navbar = () => {
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-        isTransparent
+        isTransparent && !isMobileMenuOpen
           ? "bg-transparent text-white"
           : "bg-white text-black"
       )}
@@ -101,7 +101,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
 
-            {isTransparent ? (
+            {isTransparent && !isMobileMenuOpen ? (
 
               <img src="/FRK-logo-white.png" loading="lazy" className="object-contain h-16 w-40" alt="nav-logo" />
 
@@ -190,7 +190,7 @@ const Navbar = () => {
               onClick={toggleMobileMenu}
               className={cn(
                 "p-2 rounded-md transition-colors",
-                isTransparent
+                isTransparent && !isMobileMenuOpen
                   ? "text-white hover:bg-white/10"
                   : "text-gray-700 hover:bg-gray-100"
               )}
@@ -216,10 +216,7 @@ const Navbar = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
           className={cn(
-            "md:hidden transition-all duration-500",
-            isTransparent
-              ? "bg-transparent text-white"
-              : "bg-white text-black shadow-md"
+            "md:hidden transition-all duration-500 bg-white text-black shadow-md"
           )}
         >
 
@@ -235,16 +232,11 @@ const Navbar = () => {
                   className={cn(
                     "block px-4 py-2 rounded-md text-sm font-medium transition-all",
                     location.pathname === itemObj.href
-                      ? isTransparent
-                        ? "bg-white/20 text-white rounded-2xl"
-                        : "bg-gray-200 text-black"
-                      : isTransparent
-                        ? "text-white/90 hover:text-white hover:bg-white/10"
-                        : "text-gray-600 hover:text-black hover:bg-gray-100"
+                      ? "bg-gray-200 text-black rounded-2xl"
+                      : "text-gray-600 hover:text-black hover:bg-gray-100"
                   )}
                 >
                   {itemObj.name}
-
                 </Link>
 
               </li>
@@ -258,7 +250,7 @@ const Navbar = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={cn(
                   "block text-center px-4 py-2 mt-2 rounded-full font-medium text-sm transition-all duration-300",
-                  isTransparent
+                  isTransparent && !isMobileMenuOpen
                     ? "bg-white text-black hover:shadow-lg hover:scale-[1.02]"
                     : "bg-black text-white hover:shadow-lg hover:scale-[1.02]"
                 )}

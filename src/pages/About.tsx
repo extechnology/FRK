@@ -56,7 +56,7 @@ export default function About() {
             />
 
 
-            <div className="px-2 sm:px-10 lg:px-14 pb-8 sm:pb-10">
+            <div className="px-2 sm:px-10 lg:px-14 pb-4 sm:pb-10">
 
 
                 {/* Animated Heading */}
@@ -94,7 +94,7 @@ export default function About() {
 
 
                 {/* About Sections */}
-                <div className="space-y-4 sm:space-y-8">
+                <div className="space-y-2 sm:space-y-8">
                    
                     {aboutSections.map((section, index) => {
 
@@ -103,7 +103,7 @@ export default function About() {
                         return (
                             <div
                                 key={index}
-                                className="pt-6 sm:pt-16 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-10 md:gap-16 items-center"
+                                className="pt-4 sm:pt-16 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-10 md:gap-16 items-center"
                             >
                                 {/* Left Content (or Right, depending on index) */}
                                 <motion.div
@@ -138,6 +138,7 @@ export default function About() {
                                         className="w-full rounded-xl shadow-md"
                                     />
                                 </motion.div>
+                                
                             </div>
                         );
                     })}
@@ -147,7 +148,7 @@ export default function About() {
 
 
                 {/* wHY US Section */}
-                <div className="mx-auto mt-14 pt-16 grid grid-cols-1 md:grid-cols-3 gap-8 items-center relative border-t-2 border-dashed">
+                <div className="mx-auto mt-10 pt-10 grid grid-cols-1 md:grid-cols-3 gap-8 items-center relative border-t-2 border-dashed">
 
 
                     <DotPattern
@@ -172,7 +173,7 @@ export default function About() {
                             </div>
                             <p className="font-medium text-gray-900 text-xl">Energy Efficiency</p>
                             <p className="text-gray-600 text-sm mt-2">Increase electricity and environmental degradation savings through the efficient performance of our solar-powered lighting systems.</p>
-                        </motion.div>
+                        </motion.div>   
 
 
                         <motion.div
@@ -261,7 +262,7 @@ export default function About() {
 
 
                 {/* Cta Section */}
-                <div className="relative px-6 py-20 sm:py-28 mt-10 sm:mt-20 mx-auto text-center rounded-2xl overflow-hidden shadow-2xl">
+                <div className="relative px-3 py-14 sm:py-28 mt-5 sm:mt-20 mx-auto text-center rounded-2xl overflow-hidden shadow-2xl">
 
 
                     {/* Gradient Background with Glow Beam */}
@@ -316,7 +317,6 @@ export default function About() {
                         </motion.div>
                     </div>
                 </div>
-
 
 
             </div>

@@ -34,13 +34,13 @@ export default function Solutions() {
     return (
 
 
-        <section className="w-full px-2 sm:px-10 lg:px-14 py-8 sm:py-5">
+        <section className="w-full px-2 sm:px-10 lg:px-14 py-2 sm:py-5">
 
             <motion.div
                 initial={{ opacity: 0, y: -30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="flex flex-col justify-center items-center gap-6 mb-10"
+                className="flex flex-col justify-center items-center gap-6 mb-5 sm:mb-10"
             >
 
                 <div>
@@ -60,7 +60,8 @@ export default function Solutions() {
             </motion.div>
 
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-3 sm:gap-6">
+           
                 {cards.map((card, index) => (
                     <motion.div
                         key={index}
@@ -71,14 +72,17 @@ export default function Solutions() {
                         className="bg-white overflow-hidden flex flex-col"
                     >
                         <img src={card.image} alt={card.title} loading="lazy" className="w-full h-72 object-cover rounded-2xl" />
+
                         <div className="p-2 sm:p-4 flex flex-col gap-1">
                             <h3 className="text-lg font-semibold">{card.title}</h3>
                             <p className="text-gray-600 text-sm text-justify sm:text-left">
                                 {card.description}
                             </p>
                         </div>
+                   
                     </motion.div>
                 ))}
+           
             </div>
 
         </section>
