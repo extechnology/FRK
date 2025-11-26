@@ -44,12 +44,12 @@ export default function BentoGrid() {
         <div className="w-full px-2 sm:px-10 lg:px-14 py-2 sm:py-5">
 
 
-            <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr] gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr] sm:gap-6 gap-4">
 
 
                 {/* Left Green Services Card */}
                 <motion.div
-                    className="bg-gradient-to-br from-black via-gray-900 to-black text-white rounded-xl px-5 sm:px-10 flex flex-col justify-center md:row-span-2 h-[320px] md:h-[330px]"
+                    className="bg-gradient-to-br from-black via-gray-900 to-black text-white rounded-xl px-5 sm:px-10 flex flex-col justify-center md:row-span-2 h-[300px] md:h-[330px]"
                     custom={0}
                     variants={cardVariants}
                     initial="hidden"
@@ -66,12 +66,12 @@ export default function BentoGrid() {
                                 className="flex justify-between items-center group cursor-pointer"
                             >
 
-                                <span className="relative transition-colors text-md sm:text-3xl duration-300 group-hover:text-green-400 font-semibold">
+                                <span className="relative transition-colors text-[1rem] sm:text-3xl duration-300 group-hover:text-green-400 font-semibold">
                                     {item.name}
                                     <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-green-400 transition-all duration-300 group-hover:w-full"></span>
                                 </span>
 
-                                <span className="text-white transition-colors duration-300 group-hover:text-green-400 text-md sm:text-3xl font-semibold">
+                                <span className="text-white transition-colors duration-300 group-hover:text-green-400 text-[1.2rem] sm:text-3xl font-semibold">
 
                                     <CountUp
                                         from={0}

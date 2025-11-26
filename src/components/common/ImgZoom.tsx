@@ -1,10 +1,10 @@
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-export default function ImgZoom({ src , alt }: { src: string , alt: string }) {
+export default function ImgZoom({ src , alt , className }: { src: string , alt: string , className?: string }) {
   return (
     <Zoom >
-      <img src={src} loading="lazy" className="w-full object-cover hover:cursor-pointer" alt={alt} />
+      <img src={src} loading="lazy" className={`w-full object-cover hover:cursor-pointer ${className}`} alt={alt} />
     </Zoom>
   );
 }

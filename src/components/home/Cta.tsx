@@ -9,14 +9,14 @@ export default function Cta() {
 
     return (
 
-        <section className="w-full px-4 sm:px-6 lg:px-8 py-8">
+        <section className="w-full px-2 sm:px-6 lg:px-8 py-5">
 
             <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="relative rounded-3xl bg-gradient-to-br from-black via-gray-900 to-black text-center px-6 py-12 sm:py-16 md:py-20 max-w-7xl mx-auto"
+                className="relative rounded-3xl bg-gradient-to-br from-black via-gray-900 to-black text-center px-5 py-12 sm:py-16 md:py-20 max-w-7xl mx-auto"
             >
 
                 {/* Gradient Background with Glow Beam */}

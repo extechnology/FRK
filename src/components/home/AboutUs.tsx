@@ -32,7 +32,7 @@ export default function AboutUs() {
     return (
 
 
-        <section className="w-full px-2 sm:px-10 lg:px-14 py-5 sm:py-10">
+        <section className="w-full px-2 sm:px-10 lg:px-14 py-2 sm:py-10">
 
 
             {/* Grid */}
@@ -82,7 +82,7 @@ export default function AboutUs() {
                 </div>
 
                 {/* RIGHT COLUMN */}
-                <div className="flex flex-col h-full justify-between gap-6">
+                <div className="flex flex-col h-full justify-between gap-3">
 
                     {/* Description */}
                     <motion.p
@@ -109,7 +109,7 @@ export default function AboutUs() {
                         viewport={{ once: true }}
                         custom={2}
                     >
-                        <h3 className="text-2xl font-semibold mb-4">Our Speciality</h3>
+                        <h3 className="text-3xl font-semibold mb-4">Our Speciality</h3>
 
                         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                             {[

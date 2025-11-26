@@ -27,7 +27,7 @@ export default function ProductView() {
     return (
 
 
-        <div className="mx-auto px-2 sm:px-8 lg:px-24 pt-16 sm:pt-24 pb-12">
+        <div className="mx-auto px-2 sm:px-8 lg:px-24 pt-16 sm:pt-24 pb-5">
 
 
             {/* Top Section */}
@@ -37,15 +37,13 @@ export default function ProductView() {
                 {/* Image Gallery */}
                 <div>
 
-
-
                     <motion.div
-                        className="w-full rounded-2xl shadow-lg object-cover"
+                        className="w-full h-96 sm:h-auto sm:rounded-2xl sm:shadow-lg object-cover"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.4 }}
                     >
-                        <ImgZoom src={product.images[activeImg]} alt={product.title} />
+                        <ImgZoom src={product.images[activeImg]} alt={product.title} className="sm:h-auto h-96 sm:rounded-2xl" />
 
                     </motion.div>
 
@@ -80,35 +78,42 @@ export default function ProductView() {
                 </div>
 
 
-
                 {/* Product Info */}
                 <div className="flex flex-col gap-4">
 
-                    <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">
-                        {product.title}
-                    </h1>
+                    <div>
+                        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                            {product.title}
+                        </h1>
 
-                    <p className="text-base sm:text-lg text-gray-600">
-                        {product.subtitle}
-                    </p>
+                        <p className="text-base sm:text-sm text-gray-600">
+                            {product.subtitle}
+                        </p>
+                    </div>
 
                     <p className="text-sm sm:text-base text-gray-700 text-justify">
                         {product.description}
                     </p>
 
+
                     {/* Notes with Green Ticks */}
-                    <div className="space-y-2">
+                    <div className="space-y-3">
                         {product.notes.slice(0, 5).map((note, i) => (
-                            <div key={i} className="flex items-start gap-2">
+                            <div
+                                key={i}
+                                className="flex items-start gap-2 flex-wrap"
+                            >
                                 <CheckCircle className="text-green-600 w-5 h-5 mt-0.5 flex-shrink-0" />
-                                <span className="text-gray-700">{note}</span>
+                                <span className="text-gray-700 text-sm sm:text-base leading-relaxed flex-1">
+                                    {note}
+                                </span>
                             </div>
                         ))}
                     </div>
 
 
                     {/* Buttons */}
-                    <div className="mt-6 flex flex-col sm:flex-row gap-3 w-full">
+                    <div className="mt-3 sm:mt-6 flex flex-col sm:flex-row gap-3 w-full">
 
 
                         {/* Order Now Button */}
@@ -126,8 +131,6 @@ export default function ProductView() {
                                 Order Now
                             </Button>
                         </a>
-
-
 
 
                         {/* Get an Estimate Button */}
@@ -153,7 +156,7 @@ export default function ProductView() {
 
 
             {/* Tabs Section */}
-            <div className="mt-8 sm:mt-12 max-w-7xl mx-auto border rounded-lg p-4 sm:p-8 overflow-hidden">
+            <div className="mt-8 sm:mt-12 max-w-7xl mx-auto border rounded-lg p-2 sm:p-8 overflow-hidden">
 
                 <Tabs defaultValue="specs" className="w-full">
 
@@ -184,9 +187,8 @@ export default function ProductView() {
                     </TabsList>
 
 
-
                     {/* Specifications */}
-                    <TabsContent value="specs" className="mt-6 sm:mt-8 space-y-8">
+                    <TabsContent value="specs" className="mt-3 sm:mt-8 space-y-8">
 
                         {product?.specifications?.panelDetails && (
                             <div>
@@ -275,16 +277,16 @@ export default function ProductView() {
                     {/* Warranty */}
                     <TabsContent
                         value="warranty"
-                        className="mt-6 sm:mt-8 text-center text-gray-700 text-base sm:text-lg"
+                        className="mt-3 sm:mt-8 text-center text-gray-700 text-base sm:text-lg"
                     >
                         {product.warranty}
                     </TabsContent>
 
                     {/* Notes */}
-                    <TabsContent value="notes" className="mt-6 sm:mt-8">
-                        <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm sm:text-base">
+                    <TabsContent value="notes" className="mt-3 sm:mt-8">
+                        <ul className="list-disc list-outside pl-5 space-y-2 text-gray-700 text-sm sm:text-base leading-relaxed">
                             {product.notes.map((note, i) => (
-                                <li key={i}>{note}</li>
+                                <li key={i} className="pl-1">{note}</li>
                             ))}
                         </ul>
                     </TabsContent>
