@@ -9,9 +9,10 @@ import { Link } from "react-router-dom";
 
 
 // Slider data
-const slides = [
+const slides: { image: string; mobileImage: string; title: string; desc: string; }[] = [
     {
         image: "/Home-Banner.webp",
+        mobileImage: "/Home-banner-mobile.webp",
         title: "Reliable Solar Lights Day After Day.",
         desc: "Brighten every corner with eco-friendly solar lights,designed for durability, reliability, and sustainability",
     },
@@ -44,12 +45,22 @@ export default function HeroSlider() {
 
                         <div className="relative w-full h-full">
 
-                            {/* Background Image */}
+
+                            {/* Desktop Background Image */}
                             <img
                                 src={slide.image}
                                 alt="Slide"
                                 loading="lazy"
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-cover hidden sm:block"
+                            />
+
+
+                            {/* Mobile Background Image */}
+                            <img
+                                src={slide.mobileImage}
+                                alt="Slide"
+                                loading="lazy"
+                                className="w-full h-full object-cover sm:hidden block"
                             />
 
                             {/* Dark Gradient Overlay */}
@@ -79,7 +90,7 @@ export default function HeroSlider() {
                                 initial={{ opacity: 0, scale: 0.8 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 transition={{ delay: 0.6, duration: 0.6 }}
-                                className="absolute sm:bottom-16 bottom-16 sm:left-16 left-10 z-20"
+                                className="absolute sm:bottom-16 bottom-20 sm:left-16 left-10 z-20"
                             >
                                 <Link to={'/products'}>
                                     <div className="relative w-24 h-24 flex items-center justify-center">
