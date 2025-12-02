@@ -56,7 +56,7 @@ export default function Footer() {
 
 
             <a
-              href="linkedin.com/company/frklighting"
+              href="https://www.linkedin.com/company/frklighting"
               target="_blank"
               className="text-gray-300 hover:text-white w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform"
             >
